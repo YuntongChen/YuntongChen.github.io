@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=EB+Garamond&family=Roboto+Slab&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+<head>
+</head>
+<style>
+  body{background-color:whitesmoke;} 
+  .loading{position:absolute;
+  top:250px;
+  left:600px;
+  max-width:60%;
+max-height:60%;
+height:60%;} 
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;;
+}
+
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color:black;
+  }
+section:nth-child(2){
+  color: #42455a;
+  background:black;
+} 
+section:nth-child(3){
+  color: #e0ffff;
+}
+section:nth-child(4){
+  color: #42455a;
+  background:black;
+}
+section .container{
+  margin: 100px;
+}
+section .text-container{
+   display: flex;
+}
+section .text-container .text-box{
+  margin: 100px;
+  padding: 200px;
+  background:black;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.scroll{position:absolute;
+text-size:25px;
+top:600px;}
+.app1{position:absolute;
+left:10px;
+max-width:10%;
+max-height:10%;
+height:10%;}
+.description{position:absolute;
+left:100px;
+top:1800px;
+font-size:30px;
+color:black;
+font-family: 'EB Garamond', serif;}
+
+</style>
+<body>
+    
+    <div class="loading"><img src="https://cdn.glitch.global/7e2fac81-251e-4c92-98e7-6486a50d3060/test-loading.gif?v=1644122439936"></div>
+    <section>
+        <div class="scroll">Scroll Down to Exit &#8595;</div>
+      </section>
+      <section>
+        <div class="container reveal">
+          <div class="text-container">
+            <div class="app1"><a href="https://open.spotify.com/playlist/1lOhyfCAVW4X15mwwxHAwW"><img src="https://cdn.glitch.global/7e2fac81-251e-4c92-98e7-6486a50d3060/spotify-download-logo-30.png?v=1644173836401"></div></a> 
+            
+          </div>
+        </div>
+      </section>
+      <div class="description">Try this app when lost wifi connection.</div>
+      
+
+</body>
+
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+ 
