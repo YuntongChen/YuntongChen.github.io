@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Daubenton;
+  background-color: #fcfbfa;
+}
+section{
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #dcb7b3;
+  }
+section:nth-child(2){
+  color: #ae8470;
+  background: #dcb7b3;
+} 
+section:nth-child(3){
+  color: #dcb7b3;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #dcb7b3;
+}
+
+section h3{
+  font-size:30px;
+  margin: 5px;
+}
+section .text-container{
+   display: flex;
+   margin:10px;
+   height:600px;
+   width:1000px;
+}
+section .text-container .text-box{
+  margin: 60px;
+  padding: 60px;
+  background:#fcfbfa;
+}
+section .text-container .text-box div{
+height:1000px;
+width:1000px;}
+
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.title{position:absolute;
+    font-size:85px;
+    left:780px;
+    font-family:Daubenton;
+top:50px;
+color:#dcb7b3;}
+.description{position:absolute;
+left:100px;
+top:500px;
+color:#ae8470;}
+.letter{
+    font-size:25px;
+    margin:30px;
+    letter-spacing:7px;
+}
+.letters:hover{background-color: #ae8470;
+color:#fcfbfa;
+font-size:40px;}
+.test{position:absolute;
+left:8px;
+font-size:20px;
+top:1950px;
+color:#ae8470;
+font-weight: lighter;}
+.test1{position:absolute;
+left:8px;
+font-size:30px;
+top:1970px;
+color:#ae8470;}
+.test2{position:absolute;
+left:8px;
+font-size:50px;
+top:2000px;
+color:#ae8470;}
+.test3{position:absolute;
+left:8px;
+font-size:70px;
+top:2060px;
+color:#ae8470;}
+.test4{position:absolute;
+left:8px;
+font-size:80px;
+top:2230px;
+color:#ae8470;}
+.test9{position:absolute;
+left:8px;
+font-size:80px;
+top:2400px;
+color:#ae8470;
+font-style: oblique;}
+.test5{position:absolute;
+left:8px;
+font-size:95px;
+top:2580px;
+color:#ae8470;
+font-style: oblique;
+font-weight:bolder;}
+.test6{position:absolute;
+left:8px;
+font-size:15px;
+top:1930px;
+color:#ae8470;
+font-weight: lighter;}
+.test7{position:absolute;
+left:8px;
+font-size:10px;
+top:1915px;
+color:#ae8470;
+font-weight: lighter;}
+.test8{position:absolute;
+left:8px;
+font-size:5px;
+top:1900px;
+color:#ae8470;
+font-weight: lighter;}
+</style>
+<body>
+    <section>
+        <div class="title">DAUBENTON</div>
+        <p class="description">Daubenton is a serif font designed by Olivier Dolbeau. Daubenton is a <br/><br/>revival of the engraved letters of the façade of the Great Evolution <br/><br/>Gallery of the Natural History Museum in Paris. Daubenton was the <br/><br/>name of the first director of the Museum.</p>
+      </section>
+      <section>
+        <div class="container reveal">
+          <div class="text-container">
+            <div class="text-box">
+              <h2>Character set</h2>
+              <p class="letter">
+                <span class="letters">A</span> <span class="letters">B</span> <span class="letters">C</span> <span class="letters">D</span> <span class="letters">E</span> <span class="letters">F</span> <span class="letters">G</span> <span class="letters">H</span> <span class="letters">I</span> <span class="letters">J</span> <span class="letters">K</span> <span class="letters">L</span> <span class="letters">M</span> <span class="letters">N</span> <span class="letters">O</span> <span class="letters">P</span> <br/> <br/><br/><span class="letters">Q</span> <span class="letters">R</span> <span class="letters">S</span> <span class="letters">T</span> <span class="letters">U</span> <span class="letters">V</span> <span class="letters">W</span> <span class="letters">X</span> <span class="letters">Y</span> <span class="letters">Z</span> <span class="letters">1</span> <span class="letters">2</span> <span class="letters">3</span> <span class="letters">4</span> <span class="letters">5</span> <span class="letters">6</span> <br/> <br/><br/><span class="letters">7</span> <span class="letters">8</span> <span class="letters">9</span> <span class="letters">0</span> <span class="letters">!</span> <span class="letters">?</span> <span class="letters">.</span> <span class="letters">-</span> <span class="letters">"</span> <span class="letters">"</span> <span class="letters">《</span> <span class="letters">》</span> <span class="letters">Á</span> <span class="letters">Ä</span> <span class="letters">Å</span> <span class="letters">É</span> <span class="letters">Ę</span> <br/> <br/><br/> <span class="letters">Ė</span> <span class="letters">Č</span> <span class="letters">Ç</span> <span class="letters">Ć</span> <span class="letters">Î</span> <span class="letters">Ì</span> <span class="letters">Ö</span> <span class="letters">Ô</span> <span class="letters"></span>Û <span class="letters">Ú</span> <span class="letters">Ÿ</span> 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="text-box">
+            <p class="test">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test1">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test2">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test3">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test4">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test5">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test6">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test7">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test8">The quick brown fox jumps over a lazy dog.</p>
+            <p class="test9">The quick brown fox jumps over a lazy dog.</p>
+
+          </div>
+      </section>
+      
+</body>
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
