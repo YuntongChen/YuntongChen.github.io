@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'daubenton_regular';
+    src: url('daubentonwebfont-webfont.woff2') format('woff2'),
+         url('daubentonwebfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Daubenton;
+  background-color: #fcfbfa;
+}
+section{
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(1){
+  color: #dcb7b3;
+  }
+section:nth-child(2){
+  color: #ae8470;
+  background: #dcb7b3;
+} 
+section:nth-child(3){
+  color: #dcb7b3;
+}
+section:nth-child(4){
+  color: #42455a;
+  background: #dcb7b3;
+}
+
+section h3{
+  font-size:30px;
+  margin: 5px;
+}
+section .text-container{
+   display: flex;
+   margin:10px;
+   height:600px;
+   width:1000px;
+}
+section .text-container .text-box{
+  margin: 60px;
+  padding: 60px;
+  background:#fcfbfa;
+}
+section .text-container .text-box div{
+height:1000px;
+width:1000px;}
+
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.title{position:absolute;
+    font-size:85px;
+    left:780px;
+    font-family:Daubenton;
+top:50px;
+color:#dcb7b3;}
+.description{position:absolute;
+left:100px;
+top:500px;
+color:#ae8470;}
+.letter{
+    font-size:25px;
+    margin:30px;
+    letter-spacing:7px;
+}
+.letters:hover{background-color: #ae8470;
+color:#fcfbfa;
+font-size:40px;}
+.test{position:absolute;
+left:8px;
+font-size:20px;
+top:1950px;
+color:#ae8470;
+font-weight: lighter;}
+.test1{position:absolute;
+left:8px;
+font-size:30px;
+top:1970px;
+color:#ae8470;}
+.test2{position:absolute;
+left:8px;
+font-size:50px;
+top:2000px;
+color:#ae8470;}
+.test3{position:absolute;
+left:8px;
+font-size:70px;
+top:2060px;
+color:#ae8470;}
+.test4{position:absolute;
+left:8px;
+font-size:80px;
+top:2230px;
+color:#ae8470;}
+.test9{position:absolute;
+left:8px;
+font-size:80px;
+top:2400px;
+color:#ae8470;
+font-style: oblique;}
+.test5{position:absolute;
+left:8px;
+font-size:95px;
+top:2580px;
+color:#ae8470;
+font-style: oblique;
+font-weight:bolder;}
+.test6{position:absolute;
+left:8px;
+font-size:15px;
+top:1930px;
+color:#ae8470;
+font-weight: lighter;}
+.test7{position:absolute;
+left:8px;
+font-size:10px;
+top:1915px;
+color:#ae8470;
+font-weight: lighter;}
+.test8{position:absolute;
+left:8px;
+font-size:5px;
+top:1900px;
+color:#ae8470;
+font-weight: lighter;}
