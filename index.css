@@ -1,21 +1,9 @@
 body{font-family: 'IBM Plex Sans Thai Looped', sans-serif;}
 
 @font-face {
-  font-family: 'daubenton_regular';
-  src: url('daubentonwebfont-webfont.woff2') format('woff2'),
-       url('daubentonwebfont-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
   font-family: 'typefesseclaire-obscure';
-  src: url('typefesse_claire-obscure-webfont.woff2') format('woff2'),
-       url('typefesse_claire-obscure-webfont.woff') format('woff');
+  src: url('homepage typeface/typefesse_claire-obscure-webfont.woff2') format('woff2'),
+       url('homepage typeface/typefesse_claire-obscure-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
