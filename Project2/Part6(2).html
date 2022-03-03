@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=EB+Garamond&family=IBM+Plex+Sans+Thai+Looped:wght@200;400&family=Noto+Sans&family=Roboto+Slab&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet"> 
+</head>
+<style>
+@font-face {
+    font-family: 'resistanceregular';
+    src: url('font/resistance_generale-webfont-webfont.woff2') format('woff2'),
+         url('font/resistance_generale-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{font-family: 'Noto Sans', sans-serif;}
+.title{position: fixed;
+    top: 175px;
+    font-size: 50px;
+    font-family: resistanceregular;
+    left: 1100px;
+    transform: rotate(90deg);}
+.box{position: absolute;
+    height: 800px;
+    width: 650px;
+    left: 230px;
+    top: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: transparent;
+    font-size: 25px;
+line-height:2.5;}
+.miniglasses{position:absolute;
+top:100px;
+width:50px;
+left:400px;}
+#mydiv {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    width: 250px;
+    height: 250px;
+    background: #a7b8c9;
+    border-radius: 50%;
+}
+
+#mydivheader {
+    position:absolute;
+    top:250px;
+    left:600px;
+	width:55px;
+  height:18px;
+  background: black;
+border-style: none;
+border-radius:10%;
+transform: rotate(90deg);}
+#toBlue{position: fixed;
+    top: 15px;
+    background-color: #a7b8c9;
+    width: 55px;
+    height: 18px;
+    border-radius: 10%;
+    border-radius:10%;}
+#toOrgange{    position: fixed;
+    top: 15px;
+    left: 80px;
+    width: 55px;
+    height: 18px;
+    background-color: #dca880;
+    border-radius:10%;}
+#toRed{position: fixed;
+    top: 15px;
+    left: 160px;
+    width: 55px;
+    height: 18px;
+    background-color: #d74d24;
+    border-radius:10%;}
+#toKleinblue{position: fixed;
+    top: 15px;
+    left: 880px;
+    width: 55px;
+    height: 18px;
+    background-color: #002dd2;
+    border-radius:10%;}
+#toBrown{position: fixed;
+    top: 15px;
+    left: 960px;
+    width: 55px;
+    height: 18px;
+    background-color: #57342f;
+    border-radius:10%;}
+#toGreen{position: fixed;
+    top: 15px;
+    left: 1040px;
+    width: 55px;
+    height: 18px;
+    background-color: #728a2a;
+    border-radius:10%;}
+.Kleinblue{color:#002dd2;}
+.yellow{color:#ebf298;}
+.purple{color:#836aa5;}
+.brown{color:#57342f;}
+.white{color:white;}
+.blue{color:#a7b8c9;}
+.green{color:#728a2a;}
+.orange{color:#dca880;}
+.red{color:#d74d24;}
+.middleblue{color:#7295e0;}
+.container{position:absolute;
+color:black;}
+p {
+    position: absolute;
+    height: 800px;
+    width: 650px;
+    left: 230px;
+    top: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: transparent;
+    font-size: 25px;
+line-height:2.5;
+}
+</style>
+<body>
+    <div class="container">
+    <div id="toBlue"></div>
+    <div id="toGreen"></div>
+    <div id="toRed"></div>
+    <div id="toOrgange"></div>
+    <div id="toBrown"></div>
+    <div id="toKleinblue"></div></div>
+
+    <div class="title"><span class="green">On</span> <span class="red">Pun</span><span class="brown">ctu</span><span class="orange">a</span><span class="blue">t</span>i<span class="green">on</span></div>
+
+    <div id="mydiv" onclick="clickCircleChangeColor()">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="mydivheader" onclick="clickCircleChangeColor()"></div>
+      </div>
+      <p id="wowcolors">There are some punctuations that are interesting and there are some punctuations that are not. Let us begin with the punctuations that are not. Of these the one but the first and the most the completely most uninteresting is the question mark. The question mark is alright when it is all alone when it is used as a brand on cattle or when it could be used in decoration but connected with writing it is completely entirely completely uninteresting. It is evident that is you ask a question you ask a question but anybody who can read at all knows when a question is a question as it is written in writing. Therefore I ask you therefore wherefore should one use the question mark. Beside it does not in its form go with ordinary printing and so it pleases neither the eye nor the ear and it is therefore like a noun, just an unnecessary name of something. A question is a question, anybody can know that a question is a question and so why add to it the question mark when it is already there when the question is already there in the writing. Therefore I never could bring myself to use a question mark, I always found it positively revolting, and now very few do use it. Exclamation marks have the same difficulty and also quotation marks, they are unnecessary, they are ugly, they spoil the line of the writing or the printing and anyway what is the use, if you do not know that a question is a question what is the use of its being a question. The same thing is true of a quotation. When I first began writing I found it simply impossible to use question marks and quotation marks and exclamation points and now anybody sees it that way. Perhaps some day they will see it some other way but not at any rate anybody can and does see it that way.
+    </p>
+
+</body>
+<script>
+    // Make the DIV element draggable:
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+       
+ document.getElementById("toBlue").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#a7b8c9';
+        }
+        document.getElementById("toGreen").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#728a2a';
+        }
+
+        document.getElementById("toRed").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#d74d24';
+        }
+        document.getElementById("toOrgange").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#dca880';
+        }
+        document.getElementById("toBrown").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#57342f';
+        }
+        document.getElementById("toKleinblue").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#002dd2';
+        }
+
+        var wowcolors = document.getElementById("wowcolors");
+var words = wowcolors.innerText.split(" "); // here I am spliting words by space i.e tokenizing it
+var colors = ["#a7b8c9","#728a2a", "#d74d24", "#dca880", "#57342f", "#002dd2","#7295e0","white","#ebf298","#836aa5"];
+var spans = [];
+
+for(var x = 0; x < words.length; x++){
+    var color = colors[Math.floor(Math.random()*colors.length)] // geting random color from array;
+    var span = "<span style='color: " + color + ";'>" + words[x] + "</span>"
+    
+    spans.push(span);
+}
+
+// setting colored spans as paragraph HTML
+wowcolors.innerHTML = spans.join(" ");
+
+</script>
+    </html>  
