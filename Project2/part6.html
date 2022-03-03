@@ -103,14 +103,27 @@ transform: rotate(90deg);}
 .orange{color:#dca880;}
 .red{color:#d74d24;}
 .middleblue{color:#7295e0;}
+.container{position:absolute;
+color:black;
+width:100px;
+height:50px;}
 </style>
 <body>
+    <div class="container">
     <div id="toBlue"></div>
     <div id="toGreen"></div>
     <div id="toRed"></div>
     <div id="toOrgange"></div>
     <div id="toBrown"></div>
-    <div id="toKleinblue"></div>
+    <div id="toKleinblue"></div></div>
+    
+    <div class="yellow"></div>
+    <div class="purple"></div>
+    <div class="brown"></div>
+    <div class="white"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    
 
     <div class="title"><span class="green">On</span> <span class="red">Pun</span><span class="brown">ctu</span><span class="orange">a</span><span class="blue">t</span>i<span class="green">on</span></div>
 
@@ -226,6 +239,21 @@ function dragElement(elmnt) {
         document.getElementById("toKleinblue").onclick = function () {
             document.getElementById("mydiv").style.backgroundColor = '#002dd2';
         }
+
+        var wowcolors = document.getElementById("box");
+var words = wowcolors.innerText.split(" "); // here I am spliting words by space i.e tokenizing it
+var colors = ['#a7b8c9','#728a2a', "green", "white", "#728a2a", "GreenYellow","Cornsilk","Fuchsia"];
+var spans = [];
+
+for(var x = 0; x < words.length; x++){
+    var color = colors[Math.floor(Math.random()*colors.length)] // geting random color from array;
+    var span = "<span style='color: " + color + ";'>" + words[x] + "</span>"
+    
+    spans.push(span);
+}
+
+// setting colored spans as paragraph HTML
+wowcolors.innerHTML = spans.join(" ");
 
 </script>
     </html>  
