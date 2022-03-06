@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500&family=EB+Garamond&family=IBM+Plex+Sans+Thai+Looped:wght@200;400&family=Noto+Sans&family=Roboto+Slab&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet"> 
+</head>
+<style>
+@font-face {
+    font-family: 'resistanceregular';
+    src: url('font/resistance_generale-webfont-webfont.woff2') format('woff2'),
+         url('font/resistance_generale-webfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{font-family: 'Noto Sans', sans-serif;}
+.title{position: fixed;
+    top: 185px;
+    font-size: 50px;
+    font-family: resistanceregular;
+    left:80%;
+    transform: rotate(90deg);}
+.wowcolors{position: absolute;
+    height: 800px;
+    width: 700px;
+    left:20%;
+    top: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: transparent;
+    font-size: 25px;
+line-height:2.5;}
+.miniglasses{position:absolute;
+top:100px;
+width:50px;
+left:400px;}
+#mydiv {
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    width: 250px;
+    height: 250px;
+    background: #a7b8c9;
+    border-radius: 50%;
+}
+
+#mydivheader {
+    position:absolute;
+    top:250px;
+    left:650px;
+	width:55px;
+  height:18px;
+  background:black;
+border-style: none;
+border-radius:10%;
+transform: rotate(90deg);}
+#toBlue{position: fixed;
+    top: 15px;
+    background-color: #a7b8c9;
+    width: 55px;
+    height: 18px;
+    border-radius: 10%;
+    border-radius:10%;}
+#toOrgange{    position: fixed;
+    top: 15px;
+    left: 80px;
+    width: 55px;
+    height: 18px;
+    background-color: #dca880;
+    border-radius:10%;}
+#toRed{position: fixed;
+    top: 15px;
+    left: 160px;
+    width: 55px;
+    height: 18px;
+    background-color: #d74d24;
+    border-radius:10%;}
+#toKleinblue{position: fixed;
+    top: 15px;
+    left:240px;
+    width: 55px;
+    height: 18px;
+    background-color: #002dd2;
+    border-radius:10%;}
+#toBrown{position: fixed;
+    top: 15px;
+    left:320px;
+    width: 55px;
+    height: 18px;
+    background-color: #57342f;
+    border-radius:10%;}
+#toGreen{position: fixed;
+    top: 15px;
+    left:400px;
+    width: 55px;
+    height: 18px;
+    background-color: #728a2a;
+    border-radius:10%;}
+.Kleinblue{color:#002dd2;}
+.yellow{color:#ebf298;}
+.purple{color:#836aa5;}
+.brown{color:#57342f;}
+.white{color:white;}
+.blue{color:#a7b8c9;}
+.green{color:#728a2a;}
+.orange{color:#dca880;}
+.red{color:#d74d24;}
+.middleblue{color:#7295e0;}
+.container{position:absolute;
+color:black;}
+p {
+    position: absolute;
+    height: 800px;
+    width: 650px;
+    left: 230px;
+    top: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: transparent;
+    font-size: 25px;
+line-height:2.5;
+}
+#LensColorButton {
+    background-color:white;
+    height:50px;
+    margin:0;
+    padding:10px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;}
+
+    @media only screen and (max-width:1200px) {
+  body {
+    background-color: black;
+  }
+  .wowcolors{font-size:20px;
+    width:600px;}
+  .black{color:white;}
+  #LensColorButton{background-color:black;}
+  .title{top:250px;
+      left:800px;}
+      #mydiv{left:150px;
+        width: 200px;
+    height: 200px;
+    background:#002dd2;}
+      #mydivheader{left:680px;
+    background:white;}
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color:white;
+  }
+  .wowcolors{font-size:15px;
+    width: 400px;
+left:5%;}
+#LensColorButton{background-color:white;}
+.title{top:200px;
+      left:350px;}
+      #mydiv{left:50px;
+        width: 150px;
+    height: 150px;}
+      #mydivheader{left:400px;
+    background:black;}
+    .black{color:black;}
+}
+
+</style>
+<body>
+    <div class="LensColorButton" id="LensColorButton">
+    <div id="toBlue"></div>
+    <div id="toGreen"></div>
+    <div id="toRed"></div>
+    <div id="toOrgange"></div>
+    <div id="toBrown"></div>
+    <div id="toKleinblue"></div></div>
+  
+    <div class="title"><span class="green">On</span> <span class="red">Pun</span><span class="brown">ctu</span><span class="orange">a</span><span class="blue">t</span><span class="black">i</span><span class="green">on</span></div>
+    
+
+    <div id="mydiv" onclick="clickCircleChangeColor()">
+        <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+        <div id="mydivheader" onclick="clickCircleChangeColor()"></div>
+      </div>
+    
+      <p class="wowcolors" id="wowcolors">
+        
+        There are some punctuations that are interesting and there are some punctuations that are not. Let us begin with the punctuations that are not. Of these the one but the first and the most the completely most uninteresting is the question mark. The question mark is alright when it is all alone when it is used as a brand on cattle or when it could be used in decoration but connected with writing it is completely entirely completely uninteresting. It is evident that is you ask a question you ask a question but anybody who can read at all knows when a question is a question as it is written in writing. Therefore I ask you therefore wherefore should one use the question mark. Beside it does not in its form go with ordinary printing and so it pleases neither the eye nor the ear and it is therefore like a noun, just an unnecessary name of something. A question is a question, anybody can know that a question is a question and so why add to it the question mark when it is already there when the question is already there in the writing. Therefore I never could bring myself to use a question mark, I always found it positively revolting, and now very few do use it. Exclamation marks have the same difficulty and also quotation marks, they are unnecessary, they are ugly, they spoil the line of the writing or the printing and anyway what is the use, if you do not know that a question is a question what is the use of its being a question. The same thing is true of a quotation. When I first began writing I found it simply impossible to use question marks and quotation marks and exclamation points and now anybody sees it that way. Perhaps some day they will see it some other way but not at any rate anybody can and does see it that way.
+        
+        So there are the uninteresting things in punctuation uninteresting in a way that is perfectly obvious, and so we do not have to go any farther into that. There are besides dashes and dots, and these might be interesting spaces might be interesting. They might if one felt that way about them. 
+        
+        One other little punctuation mark one can have feelings about and that is the apostrophe for possession. Well feel as you like about that, I can see and I do see that for many that for some the possessive case apostrophe has a gentle tender insinuation that makes it very difficult to definitely decide to do without it. One does do without it, I do, I mostly always do, but I cannot deny that from time to time I feel myself having regrets and from time to time I put it in to make the possessive case. I absolutely do not like it and leaving it out I feel no regret, there it is unnecessary and not ornamental but inside a word and its s well perhaps, perhaps it does appeal by its weakness to your weakness. At least at any rate from time to time I do find myself letting it alone if it has come in and sometimes it has come in. I cannot positively deny but that I do from time to time let it come in. 
+        
+        So now to come to the real question of punctuation, periods, commas, colons, semi-colons and capitals and small letters. 
+        
+        I have had a long and complicated life with all these. 
+        
+        Let us begin with these I use the least first and these are colons and semi-colons, one might add to these commas.
+        
+        When I first began writing, I felt that writing should go on, I still do feel that it should go on but when I first began writing I was completely possessed by the necessity that writing should go on and on and if writing should go on what had colons and commas to do with it, what had periods to do with it what had small letters and capitals to do with it to do with writing going on which was at that time the most profound need I had in connection with writing. What had colons and semi-colons to do with it what had commas to do with it what had periods to do with it.
+        
+        What had periods to do with it. Inevitably no matter how completely I had to have writing go on, physically one had to again and again stop sometime and if one had to again and again stop sometime and if one had to again and again stop some time then periods had to exist. Beside I had always like the look of periods and I liked what they did. Stopping sometime did not really keep one from going on, it was nothing that interfered, it was only something that happened, and as it happened as a perfectly natural happening, I did not believe in periods and I used them. I really never stopped using them.
+        
+        Beside that periods might later come to have a life of their own to commence breaking up things in arbitrary ways, that has happened lately with me in a poem I have written called Winning His Way, later I will read you a little of it. By the time I had written this poem about three years ago periods had come to have for me completely a life of their own. They could begin to act as they thought best and one might interrupt one’s writing with them that is not really interrupt one’s writing with them but one could come to stop arbitrarily stop at times in one’s writing and so they could be used and you could use them Periods could come to exist in this way and they could come in this way to have a life of their own. They did not serve you in any servile way as commas and colons and semi-colons do. Yes you do feel what I mean.
+        
+        Periods have a life of their own a necessity of their own a feeling of their own a time of their own. And that feeling that life that necessity that time can express itself in an infinite variety that is the reason that I have always remained true to periods so much so that as I say recently I have felt that one could need them more than one had ever needed them.
+        
+        You can see what an entirely different thing a period is from a comma, a colon or a semi-colon.
+        
+        There are two different way of thinking about colons and semicolons you can think of them as commas and as such they are purely servile or you can think of them as periods and then using them can make you feel adventurous I can see that one might feel about them as periods but I myself never have, I began unfortunately to feel them as a comma and commas are servile they have no life of their own they are dependent upon use and convenience and they are put there just for practical purposes. Semi-colons and colons had for me from the first completely this character the character that a comma has and not the character that a period has and therefore and definitely I have never used them. But now dimly and definitely I do see that they might well possibly they might have in them something of the character of the period and so it might have been an adventure to use them. I really do not think so. I think however lively they are or disguised they are they are definitely more comma than period and so really I cannot regret not having used them. They are more powerful more imposing more pretentious than a comma but they are a comma all the same. They really have within them deeply within them fundamentally within them the comma nature. And now what does a comma do and what has it to do and why do I feel as I do about them.
+        
+        What does a comma do.
+        
+        I have refused them so often and left them out so much and did without them so continually that I have come finally to be indifferent to them. I do not now care whether you put them in or not but for a long time I felt very definitely about them and would have nothing to do with them.
+        
+        As I say commas are servile and they have no life of their own, and their use is not a use, it is a way of replacing one’s own interest and I do decidedly like to like my own interest my own interest in what I am doing. A comma by helping you along holding your coat for you and putting on your shoes keeps you from living your life as actively as you should lead it and to me for many years and I still do feel that way about it only now I do not pay as much attention to them, the use of them was positively degrading. Let me tell you what I feel and what I mean and what I felt and what I meant.
+        
+        When I was writing those long sentences of The Making of Americans, verbs active present verbs with long dependent adverbial clauses became a passion with me. I have told you that I recognize verbs and adverbs aided by prepositions and conjunctions with pronouns as possessing the whole of the active life of writing. 
+        
+        Complications make eventually for simplicity and therefore I have always liked dependent adverbial clauses. I have like dependent adverbial clauses because of their variety of dependence and independence. You can see how loving the intensity of complication of these things that commas would be degrading. Why if you want the pleasure of concentrating on the final simplicity of excessive complication would you want any artificial aid to bring about that simplicity. Do you see now why I feel about that simplicity. Do you see now why I feel about
+        the comma as I did and as I do.
+        
+        Think about anything you really like to do and you will see what I mean.
+        
+        When it gets really difficult you want to disentangle rather than to cut the knot, at least of anybody feels who is working with any thread, so anybody feels who is working with any tool so anybody feels who is writing any sentence or reading it after it has been written. And what does a comma do, a comma does nothing but make easy a thing that if you like it enough is easy enough without the comma. A long complicated sentence should force itself upon you, make you know yourself knowing it and the comma, well at the most a comma is a poor period that lets you stop and take a breath but if you want to take a breath you ought to know yourself that you want to take a breath. It is not like stopping altogether has something to do with going on, but taking a breath well you are always taking a breath and why emphasize one breath rather than another breath. Anyway that is the way I felt about it and I felt that about it very very strongly. And so I almost never used a comma. The longer, the more complicated the sentence the greater the number of the same kinds of words I had following one after another, the more the very more I had of them the more I felt the passionate need of their taking care of themselves by themselves and not helping them, and thereby enfeebling them by putting in a comma.
+        
+        So that is the way I felt about punctuation in prose, in poetry it is a little different but more so and later I will go into that. But that is the way I felt about punctuation in prose.</p>
+
+        
+</body>
+<script>
+    // Make the DIV element draggable:
+dragElement(document.getElementById("mydiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+       
+ document.getElementById("toBlue").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#a7b8c9';
+        }
+        document.getElementById("toGreen").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#728a2a';
+        }
+
+        document.getElementById("toRed").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#d74d24';
+        }
+        document.getElementById("toOrgange").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#dca880';
+        }
+        document.getElementById("toBrown").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#57342f';
+        }
+        document.getElementById("toKleinblue").onclick = function () {
+            document.getElementById("mydiv").style.backgroundColor = '#002dd2';
+        }
+
+        var wowcolors = document.getElementById("wowcolors");
+var words = wowcolors.innerText.split(" "); // here I am spliting words by space i.e tokenizing it
+var colors = ["#a7b8c9","#728a2a", "#d74d24", "#dca880", "#57342f", "#002dd2","#7295e0","white","#ebf298","#836aa5","black"];
+var spans = [];
+
+for(var x = 0; x < words.length; x++){
+    var color = colors[Math.floor(Math.random()*colors.length)] // geting random color from array;
+    var span = "<span style='color: " + color + ";'>" + words[x] + "</span>"
+    
+    spans.push(span);
+}
+
+// setting colored spans as paragraph HTML
+wowcolors.innerHTML = spans.join(" ");
+
+</script>
+    </html>  
