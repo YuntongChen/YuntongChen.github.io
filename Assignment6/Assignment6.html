@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family:Arial, Helvetica, sans-serif;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  height:180px;
+  background:#6daead;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  height:700px;
+}
+.days li:hover{font-size:25px;
+background-color:#bc9379;
+color:white;}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:20px;
+  color:#6669;
+}
+
+.days li .active {
+  padding: 5px;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+</style>
+</head>
+<body>
+
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      March<br>
+      <span style="font-size:18px">2022</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+
+
+<ul class="days" >
+    <br/>
+<li id="pink" onclick="clickCircleChangeColor()">27</li>
+<li id="pinka" onclick="clickCircleChangeColora()">28</li>
+<li id="pink1" onclick="clickCircleChangeColor1()">1</li>
+<li id="pink2" onclick="clickCircleChangeColor2()">2</li>
+<li id="pink3" onclick="clickCircleChangeColor3()">3</li>
+<li id="pink4" onclick="clickCircleChangeColor4()">4</li>
+<li id="pink5" onclick="clickCircleChangeColor5()">5</li>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <li id="pink6" onclick="clickCircleChangeColor6()">6</li>
+  <li id="pink7" onclick="clickCircleChangeColor7()">7</li>
+  <li id="pink8" onclick="clickCircleChangeColor8()">8</li>
+  <li id="pink9" onclick="clickCircleChangeColor9()">9</li>
+  <li id="pink10" onclick="clickCircleChangeColor10()">10</li>
+  <li id="pink11" onclick="clickCircleChangeColor11()">11</li>
+  <li id="pink12" onclick="clickCircleChangeColor12()">12</li>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <li id="pink13" onclick="clickCircleChangeColor13()">13</li>
+  <li id="pink14" onclick="clickCircleChangeColor14()">14</li>
+  <li id="pink15" onclick="clickCircleChangeColor15()">15</li>
+  <li id="pink16" onclick="clickCircleChangeColor16()">16</li>
+  <li id="pink17" onclick="clickCircleChangeColor17()">17</li>
+  <li id="pink18" onclick="clickCircleChangeColor18()">18</li>
+  <li id="pink19" onclick="clickCircleChangeColor19()">19</li>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <li id="pink20" onclick="clickCircleChangeColor20()">20</li>
+  <li id="pink21" onclick="clickCircleChangeColor21()">21</li>
+  <li id="pink22" onclick="clickCircleChangeColor22()">22</li>
+  <li id="pink23" onclick="clickCircleChangeColor23()">23</li>
+  <li id="pink24" onclick="clickCircleChangeColor24()">24</li>
+  <li id="pink25" onclick="clickCircleChangeColor25()">25</li>
+  <li id="pink26" onclick="clickCircleChangeColor26()">26</li>
+   <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <li id="pink27" onclick="clickCircleChangeColor27()">27</li>
+  <li id="pink28" onclick="clickCircleChangeColor28()">28</li>
+  <li id="pink29" onclick="clickCircleChangeColor29()">29</li>
+  <li id="pink30" onclick="clickCircleChangeColor30()">30</li>
+  <li id="pink31" onclick="clickCircleChangeColor31()">31</li>
+</ul>
+
+
+</body>
+<script>
+function clickCircleChangeColor(){
+  let circle = document.getElementById("pink"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+
+function clickCircleChangeColora(){
+  let circle = document.getElementById("pinka"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+
+function clickCircleChangeColor1(){
+  let circle = document.getElementById("pink1"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+
+function clickCircleChangeColor2(){
+  let circle = document.getElementById("pink2"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor3(){
+  let circle = document.getElementById("pink3"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor4(){
+  let circle = document.getElementById("pink4"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor5(){
+  let circle = document.getElementById("pink5"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor6(){
+  let circle = document.getElementById("pink6"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor1(){
+  let circle = document.getElementById("pink1"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor7(){
+  let circle = document.getElementById("pink7"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor8(){
+  let circle = document.getElementById("pink8"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor9(){
+  let circle = document.getElementById("pink9"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor10(){
+  let circle = document.getElementById("pink10"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor11(){
+  let circle = document.getElementById("pink11"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor12(){
+  let circle = document.getElementById("pink12"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor13(){
+  let circle = document.getElementById("pink13"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor14(){
+  let circle = document.getElementById("pink14"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor15(){
+  let circle = document.getElementById("pink15"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor16(){
+  let circle = document.getElementById("pink16"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor17(){
+  let circle = document.getElementById("pink17"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor18(){
+  let circle = document.getElementById("pink18"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor19(){
+  let circle = document.getElementById("pink19"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor20(){
+  let circle = document.getElementById("pink20"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor21(){
+  let circle = document.getElementById("pink21"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor22(){
+  let circle = document.getElementById("pink22"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor23(){
+  let circle = document.getElementById("pink23"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor24(){
+  let circle = document.getElementById("pink24"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor25(){
+  let circle = document.getElementById("pink25"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor26(){
+  let circle = document.getElementById("pink26"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor27(){
+  let circle = document.getElementById("pink27"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor28(){
+  let circle = document.getElementById("pink28"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor29(){
+  let circle = document.getElementById("pink29"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor30(){
+  let circle = document.getElementById("pink30"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+function clickCircleChangeColor31(){
+  let circle = document.getElementById("pink31"); 
+  circle.style.backgroundColor = "#bc9379";
+  circle.style.color="white";
+}
+
+
+</script>
+</html>
