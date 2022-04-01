@@ -97,3 +97,17 @@ color:hotpink;}
     .Assignment6:hover{color: hotpink;
       text-decoration: none;
     font-size:30px;}
+
+    .Assignment6b{position:absolute;
+      top:1050px;
+      left:600px;
+      color: hotpink;}   
+    .Assignment6b:hover{color: hotpink;
+      text-decoration: none;
+    font-size:30px;}
+    .Project1{position:absolute;
+      top:250px;
+      left:1192px;}
+    .Project2{position:absolute;
+      top:400px;
+      left:1192px;}
