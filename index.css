@@ -111,3 +111,10 @@ color:hotpink;}
     .Project2{position:absolute;
       top:400px;
       left:1192px;}
+      .Assignment7{position:absolute;
+        top:1200px;
+        left:600px;
+        color: hotpink;}   
+      .Assignment7:hover{color: hotpink;
+        text-decoration: none;
+      font-size:30px;}
