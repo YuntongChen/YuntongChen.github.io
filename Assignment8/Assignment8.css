@@ -67,18 +67,32 @@ p.title {color:white;
 
   
 
-@media screen and (min-width: 768px) {
-  div.container {
-    padding: 2%;
-    margin: 2%;
-    flex-basis: 29%;
-  }
-}
+@media screen and (max-width: 768px) {
+    div.container {
+      padding: 2%;
+      margin: 2%;
+      flex-basis: 29%;
+    }
+    div#information h1 {font-size:20px;
+        left:50px;
+        max-width: 500px;}
+        div#information p {top:180px;
+        font-size:10px;
+        left:550px;
+        max-width: 160px;}
+        p.title{font-size:10px;
+            width:200px;
+            height:25px;}}
+    
+  
+@media screen and (min-width:768px) { 
+    p.title{font-size:15px;
+    width:200px;
+    height:30px;}}
+    div#information p{
+    left:68%;
+top:37%;}
+div#information h1{left:5%;}
 
-@media screen and (min-width: 1280px) {
-  div.container {
-    padding: 2%;
-    margin: 2%;
-    flex-basis: 21%;
-  }
-}
+@media screen and (min-width:1000px) { 
+    div#information p{font-size:15px;}}
