@@ -20,6 +20,7 @@ display:inline-block;}
 
 img.image {
   max-width:100%;
+  filter:brightness(140%);
 }
 
 p.title {
