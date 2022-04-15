@@ -6,16 +6,20 @@
     font-style: normal;
 
 }
-body{font-family: 'leonardo_fascia_trialm';}
+body{font-family: 'leonardo_fascia_trialm';
+background-color:darkblue;
+color:antiquewhite;}
 
 main{position:absolute;
-top:400px;
+top:450px;
 font-size:30px;
+left:420px;
 }
 .question{position:absolute;
-    top:200px;
-    font-size:40px;
-    font-style: italic;}
+    top:150px;
+    font-size:60px;
+    font-style: italic;
+left:300px;}
 
 
 
