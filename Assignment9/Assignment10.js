@@ -48,3 +48,98 @@ fetch(authenticatedUrl)
   }
 
 
+// STEP 2: DOM REFERENCES
+const usersContainerElement = document.querySelector('#map')
+const shownegativeUsersButtonElement = document.querySelector('button#negative')
+const showpositiveButtonElement = document.querySelector('button#positive')
+const showneutralButtonElement = document.querySelector('button#neutral')
+// STEP 3: FUNCTIONS
+const createUserElement = (user) => {
+    // Create Container Element
+    const containerElement = document.createElement('div')
+    containerElement.classList.add('user')
+    // Create Positive Element
+    const positiveElement = document.createElement('p')
+    positiveElement.innerHTML = 'positive ' + user.positive
+    // Create Negative Element
+    const negativeElement = document.createElement('p')
+    negativeElement.innerHTML = 'negative' + user.negative
+    // Create Neutral Element
+    const neutralElement = document.createElement('p')
+    neutralElement.innerHTML = 'neutral ' + user.neutral
+    containerElement.appendChild(positiveElement)
+    containerElement.appendChild(negativeElement)
+    containerElement.appendChild(neutralElement)
+    return containerElement
+}
+
+const removeUsers = () => {
+    usersContainerElement.innerHTML = ""
+}
+
+const addUsers = () => {
+    map.forEach(user => {
+        const userElement = createUserElement(user)
+        usersContainerElement.appendChild(userElement)
+    });
+}
+
+// STEP 4: APPLICATION
+// MAP
+const usersWithType = users.map((user) => {
+    const userWithCreditInDollars = {
+        Type: user.negative, 
+        Type: user.positive, 
+        Type: user.neutral
+    }
+    const creditInDollars = userWithCreditInDollars.credit / 100 
+    userWithCreditInDollars.credit = '$' + creditInDollars
+    return userWithCreditInDollars
+})
+
+// FILTER
+const negativeUsers = users.filter((user) => {
+    return user.negative
+})
+
+const positiveUsers = users.filter((user) => {
+    return user.positive
+})
+
+const neutralUsers = users.filter((user) => {
+    return user.neutral
+})
+
+// SORT 
+const usersSortedByType = users.sort((negative, positive) => {
+    if (negative.name < positive.name) {
+        return -1;
+      }
+      if (negative.name > positive.name) {
+        return 1;
+      }
+    
+      // names must be equal
+      return 0;
+})
+
+usersSortedByType = usersSortedByType.slice().reverse() 
+
+// SET EVENT LISTENERS
+shownegativeUsersButtonElement.addEventListener('click', () => {
+    removeUsers()
+    addUsers(negativeUsers)
+})
+
+showpositiveButtonElement.addEventListener('click', () => {
+    removeUsers()
+    addUsers(positiveUsers)
+})
+
+showneutralButtonElement.addEventListener('click', () => {
+    removeUsers()
+    addUsers(neutralUsers)
+})
+
+// START APP
+addUsers(users)
