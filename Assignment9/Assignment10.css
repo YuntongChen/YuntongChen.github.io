@@ -7,7 +7,16 @@
 
 }
 body{font-family: 'leonardo_fascia_trialm';}
-div.container{ text-align:center;}
 
-.question{position:absolute;}
+main{position:absolute;
+top:400px;
+font-size:30px;
+}
+.question{position:absolute;
+top:200px;
+font-size:40px;
+font-style: italic;}
+
+
+
 
