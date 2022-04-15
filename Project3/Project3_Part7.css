@@ -40,7 +40,9 @@ filter:brightness(140%);}
 .scene1{position:absolute;
 left:490px;
 top:580px;
-transform: rotate(-40deg);}
+transform: rotate(-40deg);
+}
+  
 
 .scene1a{position:absolute;
     left:600px;
@@ -64,49 +66,79 @@ transform: rotate(-40deg);}
 
 .glacier{position:absolute;
 left:1800px;
-top:150px;
-max-width:70%;
-max-height:70%;
-height:70%;
-filter:brightness(140%);}
+top:20px;
+max-width:100%;
+max-height:100%;
+height:100%;
+filter:brightness(150%);}
 
 .glacier2{position:absolute;
     left:1600px;
     top:20px;
-    max-width:30%;
-    max-height:30%;
-    height:30%;
+    max-width:50%;
+    max-height:50%;
+    height:50%;
     filter:brightness(140%);}
 
-.glacier3{position:absolute;
-        left:1500px;
-        top:550px;
-        max-width:30%;
-        max-height:30%;
-        height:30%;
-        filter:brightness(140%);}
+
+    .glacier3 {
+        position: absolute;
+        left: 1600px;
+        top: 420px;
+        max-width: 45%;
+        max-height: 45%;
+        height: 45%;
+        filter: brightness(140%);
+    }
 
 .glacier4{position:absolute;
-            left:2100px;
+            left:2000px;
             top:0px;
-            max-width:30%;
-            max-height:30%;
-            height:30%;
+            max-width:45%;
+            max-height:45%;
+            height:45%;
             filter:brightness(140%);}
 
 .scene2{position:absolute;
-left:1400px;
-top:400px;
+left:1500px;
+top:350px;
 transform: rotate(30deg);}
 
 .scene2a{position:absolute;
-    left:1600px;
-    top:420px;}
+    left:1650px;
+    top:380px;}
 
-.scene2b{position:absolute;
-        left:1800px;
-        top:420px;}
+.scene2b{max-width:100%;
+    max-height:100%;
+    height:5%;
+    position:absolute;
+        left:1850px;
+        top:380px;}
 
-.scene2c{position:absolute;
+        .scene2c{position:absolute;
             left:2050px;
-            top:420px;}
+            top:380px;}
+
+.icestairs{position:absolute;
+            left:3500px;
+            top:20px;
+            max-width:100%;
+            max-height:100%;
+            height:100%;
+            filter:brightness(150%);}
+
+.icestairs2{position:absolute;
+                left:4200px;
+                top:0px;
+                max-width:40%;
+                max-height:40%;
+                height:40%;
+                filter:brightness(150%);}
+
+.icestairs3{position:absolute;
+                    left:3200px;
+                    top:450px;
+                    max-width:40%;
+                    max-height:40%;
+                    height:40%;
+                    filter:brightness(150%);}
