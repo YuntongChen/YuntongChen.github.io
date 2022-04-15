@@ -14,10 +14,10 @@ div.container{ text-align:center;}
     padding: 1rem; 
 }
 
-#negative-energy{position:absolute;
+#negative{position:absolute;
 top:700px;
 font-family: 'leonardo_fascia_trialm';}
-#positive-energy{position:absolute;
+#positive{position:absolute;
     top:700px;
 left:150px;
 font-family: 'leonardo_fascia_trialm';}
