@@ -40,7 +40,7 @@ fetch(authenticatedUrl)
     console.log('names', names)
     nameElement.innerHTML = names[Math.floor(Math.random()*names.length)].fields.Text
     verbElement.innerHTML = verbs[Math.floor(Math.random()*verbs.length)].fields.Text
-    nounElement.innerHTML= noun[Math.floor(Math.random()*verbs.length)].fields.Text
+    nounElement.innerHTML= noun[Math.floor(Math.random()*noun.length)].fields.Text
   })
   .catch((error) => {
     console.log(error);
