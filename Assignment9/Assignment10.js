@@ -16,20 +16,20 @@ fetch(authenticatedUrl)
     const records = data.records
     for (let index = 0; index < records.length; index++) {
         console.log(records[index])
-        const Type = records[index].fields.Type
+        const Text = records[index].fields.Text
         console.log(records[index].fields)
         const TextUrl = records[index].fields.TextUrl
 
         const containerElement = document.createElement('div')
         containerElement.classList.add('container')
 
-        const textElement =document.createElement('Text')
+        const textElement =document.createElement('div')
         textElement.classList.add('Text')
         textElement.setAttribute('src', TextUrl)
 
         const titleElement = document.createElement('p')    
-        titleElement.classList.add('type')
-        titleElement.innerHTML = Type
+        titleElement.classList.add('text')
+        titleElement.innerHTML = Text
 
         mapContainerElement.appendChild(containerElement)
 
