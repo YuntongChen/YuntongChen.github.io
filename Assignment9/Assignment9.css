@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  main#app {
+    display:block;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  
+  div.crystal{display:block;
+      Overflow-x:auto;
+      Overflow-y:hidden;}
+  
+  div.container{width:300px;
+  height:400px;
+  display:inline-block;}
+  
+  img.image {
+    max-width:100%;
+    filter:brightness(140%);
+  }
+  
+  p.title {
+    padding: 5px;
+    border-radius: 6px;
+    background-color: white;
+    text-align: left;
+  }
+  
+  @media screen and (min-width: 768px) {
+    div.container {
+      padding: 2%;
+      margin: 2%;
+      flex-basis: 29%;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    div.container {
+      padding: 2%;
+      margin: 2%;
+      flex-basis: 21%;
+    }
+  }
