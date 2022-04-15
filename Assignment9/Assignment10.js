@@ -13,16 +13,9 @@ const nameElement = document.querySelector('#name')
 const verbElement = document.querySelector('#verb')
 const nounElement =document.querySelector('#noun')
 
-// SECTION 3: Application
-// Choose Foreground and Background Colors
-// const foregroundColor = foregroundColors[Math.floor(Math.random()*foregroundColors.length)]
-// const backgroundColor = backgroundColors[Math.floor(Math.random()*backgroundColors.length)]
 
-// Set Foreground and Background Colors 
-// bodyElement.style.color = foregroundColor
-// bodyElement.style.backgroundColor = backgroundColor
 
-// Get a 'Promise' Representing the Data that Will be Returned
+
 fetch(authenticatedUrl)
   // When 'Promise' is 'Resolved', get the JSON data
   .then((res) => res.json())
@@ -52,3 +45,4 @@ fetch(authenticatedUrl)
   .catch((error) => {
     console.log(error);
   });
+
