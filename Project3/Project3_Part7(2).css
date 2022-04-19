@@ -16,26 +16,27 @@ body {background-color:gray;
 main#app {
   display:block;
   flex: 1;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
-div.crystal{display:block;
-    Overflow-x:auto;
-    Overflow-y:hidden;}
+#Crystal{height:100vh;
+    display: flex;
+    width: 250vw;
+    overflow-x: scroll;
+    align-items: center;}
 
-div.container{background-color: gray;
-width:300px;
-height:400px;
-display:inline-block;}
+div.container{
+  display: block;
+}
 
 img.image {
-  max-width:100%;
+  
+  max-width:350%;
   filter:brightness(120%);
 }
 
 p.title {
-  text-align: left;
-  color:white;
+  color:gray;
 }
 
 @media screen and (min-width: 768px) {
@@ -53,3 +54,4 @@ p.title {
     flex-basis: 21%;
   }
 }
+
