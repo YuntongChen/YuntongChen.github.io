@@ -12,13 +12,20 @@ body{font-size:30px;
     font-family: 'leonardo_fascia_trialm';
 color:black;
 max-width:5000px;}
+
+body:after {
+    position: fixed;
+    left: 0; right: 0; 
+    background: hsla(180,0%,50%,0.25);
+    pointer-events: none;
+  }
 .mountain1{position:absolute;
     top:100px;
     left:350px;
-max-width:90%;
-max-height:90%;
-height:90%;
-filter:brightness(140%);
+max-width:95%;
+max-height:95%;
+height:95%;
+
 }
 
 .mountain2{position:absolute;
@@ -27,7 +34,7 @@ filter:brightness(140%);
 max-width:101%;
 max-height:101%;
 height:101%;
-filter:brightness(140%);}
+}
 
 .mountain3{position:absolute;
     top:-10px;
@@ -35,7 +42,7 @@ filter:brightness(140%);}
 max-width:50%;
 max-height:50%;
 height:50%;
-filter:brightness(140%);}
+}
 
 .scene1{position:absolute;
 left:490px;
@@ -66,38 +73,38 @@ transform: rotate(-40deg);
 
 .glacier{position:absolute;
 left:1800px;
-top:20px;
-max-width:100%;
-max-height:100%;
-height:100%;
-filter:brightness(150%);}
+top:-25px;
+max-width:115%;
+max-height:115%;
+height:115%;
+filter:brightness(130%);}
 
 .glacier2{position:absolute;
     left:1600px;
-    top:20px;
-    max-width:50%;
-    max-height:50%;
-    height:50%;
-    filter:brightness(140%);}
+    top:10px;
+    max-width:55%;
+    max-height:55%;
+    height:55%;
+    filter:brightness(130%);}
 
 
     .glacier3 {
         position: absolute;
-        left: 1600px;
-        top: 420px;
+        left: 1470px;
+        top: 430px;
         max-width: 45%;
         max-height: 45%;
         height: 45%;
-        filter: brightness(140%);
+        filter: brightness(130%);
     }
 
 .glacier4{position:absolute;
-            left:2000px;
-            top:0px;
-            max-width:45%;
-            max-height:45%;
-            height:45%;
-            filter:brightness(140%);}
+            left:2100px;
+            top:-20px;
+            max-width:50%;
+            max-height:50%;
+            height:50%;
+            filter:brightness(130%);}
 
 .scene2{position:absolute;
 left:1500px;
@@ -119,26 +126,18 @@ transform: rotate(30deg);}
             left:2050px;
             top:380px;}
 
-.icestairs{position:absolute;
-            left:3500px;
-            top:20px;
-            max-width:100%;
-            max-height:100%;
-            height:100%;
-            filter:brightness(150%);}
-
-.icestairs2{position:absolute;
-                left:4200px;
-                top:0px;
-                max-width:40%;
-                max-height:40%;
-                height:40%;
-                filter:brightness(150%);}
-
-.icestairs3{position:absolute;
-                    left:3200px;
-                    top:450px;
-                    max-width:40%;
-                    max-height:40%;
-                    height:40%;
-                    filter:brightness(150%);}
+.stairs{position:absolute;
+            left:3200px;
+            top:-30px;
+            max-width:115%;
+            max-height:115%;
+            height:115%;
+            filter:brightness(140%);}
+.pile{position:absolute;
+top:-20px;
+left:4600px;
+max-width:130%;
+max-height:130%;
+height:130%;
+filter:brightness(140%);
+}
