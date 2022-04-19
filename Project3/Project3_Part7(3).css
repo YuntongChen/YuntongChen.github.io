@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'leonardo_fascia_trialm';
+    src: url('/Project3/font/leonardofascia-m-trial-webfont.woff2') format('woff2'),
+         url('/Project3/font/leonardofascia-m-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {background-color:rgb(182, 182, 182);
+  margin: 0;
+  padding: 0;
+  font-family: 'leonardo_fascia_trialm';
+}
+
+
+main#app {
+  display:block;
+  flex: 1;
+  flex-wrap: nowrap;
+}
+
+#Crystal{height:100vh;
+    display: flex;
+    width: 250vw;
+    overflow-x: scroll;
+    align-items: center;}
+
+div.container{
+  display: block;
+}
+
+img.image {
+  
+  max-width:380%;
+  filter:brightness(120%);
+}
+
+p.title {
+  color:rgb(182, 182, 182);
+}
+
+@media screen and (min-width: 768px) {
+  div.container {
+    padding: 2%;
+    margin: 2%;
+    flex-basis: 29%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  div.container {
+    padding: 2%;
+    margin: 2%;
+    flex-basis: 21%;
+  }
+}
