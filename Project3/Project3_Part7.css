@@ -45,29 +45,29 @@ height:50%;
 }
 
 .scene1{position:absolute;
-left:490px;
+left:650px;
 top:580px;
 transform: rotate(-40deg);
 }
   
 
 .scene1a{position:absolute;
-    left:600px;
+    left:650px;
     top:430px;
     transform: rotate(-70deg);}
 
 .scene1b{position:absolute;
-        left:700px;
-        top:330px;
+        left:750px;
+        top:350px;
         transform: rotate(-10deg);}
 
 .scene1c{position:absolute;
-        left:870px;
+        left:900px;
         top:180px;
         transform: rotate(-60deg);}
 
 .scene1d{position:absolute;
-         left:920px;
+         left:950px;
          top:100px;
          transform: rotate(-20deg);}
 
@@ -81,7 +81,7 @@ filter:brightness(130%);}
 
 .glacier2{position:absolute;
     left:1600px;
-    top:10px;
+    top:-10px;
     max-width:55%;
     max-height:55%;
     height:55%;
@@ -100,31 +100,31 @@ filter:brightness(130%);}
 
 .glacier4{position:absolute;
             left:2100px;
-            top:-20px;
+            top:-25px;
             max-width:50%;
             max-height:50%;
             height:50%;
             filter:brightness(130%);}
 
 .scene2{position:absolute;
-left:1500px;
+left:1550px;
 top:350px;
 transform: rotate(30deg);}
 
 .scene2a{position:absolute;
-    left:1650px;
-    top:380px;}
+    left:1700px;
+    top:395px;}
 
 .scene2b{max-width:100%;
     max-height:100%;
     height:5%;
     position:absolute;
-        left:1850px;
-        top:380px;}
+        left:1900px;
+        top:395px;}
 
         .scene2c{position:absolute;
-            left:2050px;
-            top:380px;}
+            left:2070px;
+            top:395px;}
 
 .stairs{position:absolute;
             left:3200px;
@@ -134,10 +134,17 @@ transform: rotate(30deg);}
             height:115%;
             filter:brightness(140%);}
 .pile{position:absolute;
-top:-20px;
-left:4600px;
+top:-80px;
+left:4500px;
 max-width:130%;
 max-height:130%;
 height:130%;
-filter:brightness(140%);
+filter:brightness(150%);
+}
+.title{position:fixed;
+top:700px;
+left:50px;
+font-size:50px;
+background-color:black;
+color:white;
 }
