@@ -5,8 +5,7 @@ const tableUrl = "https://api.airtable.com/v0/appdX6TGwTTcHDg7D/Crystal";
 
 // URL with API Key Authentication
 const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
-const MountainTwoContainerElement =document.querySelector('#MountainTwo')
-const MountainThreeContainerElement =document.querySelector('#MountainThree')
+
 const bodyElement = document.querySelector("main#app");
 const CrystalContainerElement = document.querySelector("#Crystal")
 fetch(authenticatedUrl)
@@ -16,29 +15,26 @@ fetch(authenticatedUrl)
   .then((data) => {
     const records = data.records
     for (let index = 0; index < records.length; index++) {
+        console.log(records[index])
         const title = records[index].fields.Title
+        console.log(records[index].fields)
         const imageUrl = records[index].fields.Images[0].url
-        const Genre = records[index].fields.Genre;
 
-        const usercontainerElement = document.createElement('span')
-        usercontainerElement.classList.add('container')
+        const containerElement = document.createElement('div')
+        containerElement.classList.add('container')
 
         const imageElement =document.createElement('img')
         imageElement.classList.add('image')
         imageElement.setAttribute('src', imageUrl)
- 
- if(Genre.includes("rock")){
-  CrystalContainerElement.appendChild(usercontainerElement)
-  usercontainerElement.appendChild(imageElement)}
 
-else if(Genre.includes("Mountain2")){
-  MountainTwoContainerElement.appendChild(usercontainerElement)
-  usercontainerElement.appendChild(imageElement)}
+        const titleElement = document.createElement('p')    
+        titleElement.classList.add('title')
+        titleElement.innerHTML = title
 
-else if(Genre.includes("Mountain3")){
-    MountainThreeContainerElement.appendChild(usercontainerElement)
-    usercontainerElement.appendChild(imageElement)}
-  }})
- 
+        CrystalContainerElement.appendChild(containerElement)
 
-console.log(MountainTwoContainerElement)
+        containerElement.appendChild(imageElement)
+
+        containerElement.appendChild(titleElement)
+}
+  })
