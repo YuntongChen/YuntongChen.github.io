@@ -36,5 +36,9 @@ fetch(authenticatedUrl)
         containerElement.appendChild(imageElement)
 
         containerElement.appendChild(titleElement)
-}
+
+ }
   })
+  .catch((error) => {
+    console.log(error);
+  });
