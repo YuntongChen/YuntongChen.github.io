@@ -20,23 +20,19 @@ main#app {
 }
 
 #Crystal{height:100vh;
-    display: flex;
-    width: 250vw;
-    overflow-x: scroll;
-    align-items: center;}
+  display: flex;
+  width:300vw;
+  overflow-x: scroll;
+  align-items: center;}
 
-div.container{
+span.container{
+  
   display: block;
 }
 
 img.image {
-  
-  max-width:350%;
+  max-width:150%;
   filter:brightness(120%);
-}
-
-p.title {
-  color:gray;
 }
 
 @media screen and (min-width: 768px) {
@@ -48,10 +44,23 @@ p.title {
 }
 
 @media screen and (min-width: 1280px) {
-  div.container {
+  span.container {
     padding: 2%;
     margin: 2%;
     flex-basis: 21%;
   }
 }
+
+#MountainTwo{
+  height:80vh;
+  display:flex;
+  width: 250vw;
+  overflow-x: scroll;
+  align-items: center;}
+
+#MountainThree{height:100vh;
+  display: flex;
+  width: 250vw;
+  overflow-x: scroll;
+  align-items: center;}
 
