@@ -65,6 +65,7 @@ const descriptionUsers = users. filter((user)=>{return user.description})
 const valuableUsers = users.filter((user)=>{
     return user.attack > 80
 })
+console.log(descriptionUsers)
 
 //Sort
 const usersSortedByAttack = users.sort((userA, userB)=>{
