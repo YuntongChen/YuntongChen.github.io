@@ -50,7 +50,7 @@ const usersWithAttack = users.map((user)=>{
         name: user.name,
         description: user.description,
         attack:user.attack,
-        attack: "$" + user.attack /10
+        attack: "HP" + user.attack /1
     }
     return newUser
 })
