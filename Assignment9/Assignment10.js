@@ -46,3 +46,7 @@ fetch(authenticatedUrl)
     console.log(error);
   });
 
+
+  var bgColors=new Array("#333333", "#182e23","darkblue","black")
+
+  document.body.style.background=bgColors[Math.floor(Math.random()*bgColors.length)]
