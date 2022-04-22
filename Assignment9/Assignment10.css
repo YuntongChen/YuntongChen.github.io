@@ -7,7 +7,6 @@
 
 }
 body{font-family: 'leonardo_fascia_trialm';
-background-color:darkblue;
 color:antiquewhite;}
 
 main{position:absolute;
@@ -21,6 +20,14 @@ left:20px;
     font-size:60px;
     font-style: italic;
     left:10px;}
+
+.refresh {position:absolute;
+    top:650px;
+    left:1300px;
+    
+        display: inline-block;
+        transform: rotate(90deg);
+      }
 
 
 
