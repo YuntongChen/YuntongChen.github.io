@@ -66,7 +66,6 @@ keyboardEventElement.addEventListener('keydown',()=>{
     const feedbackElement = document.createElement('p')
     feedbackElement.innerHTML = "Key Pressed:" +event .key
     keyboardFeedbackEventElement.appendChild(feedbackElement)
-
 })
 
 
