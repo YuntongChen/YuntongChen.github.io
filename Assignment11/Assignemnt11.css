@@ -1,0 +1,37 @@
+
+   body{font-family:Arial, Helvetica, sans-serif;
+background: #d9edef;}
+    
+
+button{position:absolute;
+top:50px;
+left:250px;
+background:#3f5576;
+color:white;
+border-style: none;
+padding:4px;}
+input{position:absolute;
+left:100px;
+top:50px;
+border-style:double 1.5px;;
+background:#d46d51;
+color:white;}
+p{position:absolute;
+    top:150px;
+    left:500px;}
+
+label{position:fixed;
+top:100px;
+left:500px;
+font-size:35px;
+font-weight: bold;
+color:#d46d51;}
+
+ul {list-style-type: square;
+    padding: 10px;
+    color:#282f3d;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold}
+
+
