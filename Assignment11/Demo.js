@@ -62,10 +62,13 @@ mousemoveEventElement.addEventListener('mousemove',()=>{
 
 })
 
-keyboardEventElement.addEventListener('keydown',()=>{
-    const feedbackElement = document.createElement('p')
-    feedbackElement.innerHTML = "Key Pressed:" +event .key
-    keyboardFeedbackEventElement.appendChild(feedbackElement)
+keyboardEventElement.addEventListener('keydown',(event)=>{
+   console.log(event)
+   if(event.key === "b") {
+       console.log('b has been pressed')
+       // add image that occurs when b is pressed bere    
+   }
+   
 })
 
 
@@ -79,3 +82,4 @@ formSubmitEventElement.addEventListener('submit', (event) => {
     formSubmitEventFeedbackElement.appendChild(feedbackElement)
     formInputElement.value = ""
 })
+
