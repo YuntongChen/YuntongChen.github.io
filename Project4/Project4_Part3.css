@@ -11,3 +11,12 @@ img{position:absolute;
     max-width:130%;
     max-height:130%;
     height:130%;}
+
+.mouse{position:absolute;
+top:250px;
+left:320px;
+opacity:0%;
+}
+.mouse:hover{opacity:100%;
+    font-size:20px;
+    }
