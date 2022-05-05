@@ -146,15 +146,29 @@ bKeyElement.innerHTML = "<img src=\"./Image/squeezei.png\">";
         if(event.key === "m") {
             const bKeyElement = document.querySelector("#m")
             bKeyElement.innerHTML = "<img src=\"./Image/squeezem.png\">";
-                                }
-        
+            bKeyElement.innerHTML = "<audio controls src=\"./Audio/195 Eighth Ave.m4a\">";
                                
-        
+            document.addEventListener('keydown', function(e) {
+                if (e.keyCode == m) {
+                  document.getElementById('audio').play();
+                }
+              });
+                            }
+          
                                                                   
     keyboardFeedbackEventElement.appendChild(feedbackElement)
 
     keyboardFeedbackEventElement.appendChild(feedbackElement)
 
     })
+
+    
+    function refreshPage()
+    {
+        window.location = window.location.href;
+    }
+    setInterval('refreshPage()', 25000);
+
+
 
 
