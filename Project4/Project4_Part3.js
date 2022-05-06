@@ -142,7 +142,6 @@ bKeyElement.innerHTML = "<img src=\"./Image/squeezei.png\">";
         if(event.key === "b") {
             const bKeyElement = document.querySelector("#ba")
             bKeyElement.innerHTML = "<audio controls src=\"./Audio/sound effect2.wav\" autoplay>";
-            document.getElementById('audio').play();
                                 }                       
         if(event.key === "n") {
             const bKeyElement = document.querySelector("#n")
@@ -151,8 +150,7 @@ bKeyElement.innerHTML = "<img src=\"./Image/squeezei.png\">";
         if(event.key === "n") {
             const bKeyElement = document.querySelector("#na")
             bKeyElement.innerHTML = "<audio controls src=\"./Audio/sound effect.wav\" autoplay>";
-            document.getElementById('audio').play();
-        }
+            }
                                
          
           
@@ -164,10 +162,34 @@ bKeyElement.innerHTML = "<img src=\"./Image/squeezei.png\">";
     })
 
 
-    function handler(evt){
-        if(evt.keyCode == 3,4,5,6,7,8,w,e,r,t,y,u,i) // enter key
-            location.reload() // refresh page
+    const keysPressed = []
+
+    function handleKeyDown(evt){
+        if (!evt.repeat) {
+            console.log(evt)
+            keysPressed.push(evt.key)
+            console.log('keysPressed', keysPressed)
+            if(keysPressed.includes('e') && keysPressed.includes('r') && keysPressed.includes('t')) {
+                location.reload();
+            }
+        } else {
+            console.log('repeat')
+        }
     }  
+
+    function handleKeyUp(evt){
+        console.log(evt)
+        const index = keysPressed.indexOf(evt.key);
+        if (index > -1) {
+            keysPressed.splice(index, 1); // 2nd parameter means remove one item only
+        
+        }
+
+        console.log('keysPressed', keysPressed)
+    }      
+document.addEventListener('keydown', handleKeyDown)
+document.addEventListener('keyup', handleKeyUp)
+
 
 
 
