@@ -139,21 +139,22 @@ bKeyElement.innerHTML = "<img src=\"./Image/squeezei.png\">";
             const bKeyElement = document.querySelector("#b")
             bKeyElement.innerHTML = "<img src=\"./Image/squeezeb.png\">";
                                 }
+        if(event.key === "b") {
+            const bKeyElement = document.querySelector("#ba")
+            bKeyElement.innerHTML = "<audio controls src=\"./Audio/sound effect2.wav\" autoplay>";
+            document.getElementById('audio').play();
+                                }                       
         if(event.key === "n") {
             const bKeyElement = document.querySelector("#n")
             bKeyElement.innerHTML = "<img src=\"./Image/squeezen.png\">";
                                 }
-        if(event.key === "m") {
-            const bKeyElement = document.querySelector("#m")
-            bKeyElement.innerHTML = "<img src=\"./Image/squeezem.png\">";
-            bKeyElement.innerHTML = "<audio controls src=\"./Audio/195 Eighth Ave.m4a\">";
+        if(event.key === "n") {
+            const bKeyElement = document.querySelector("#na")
+            bKeyElement.innerHTML = "<audio controls src=\"./Audio/sound effect.wav\" autoplay>";
+            document.getElementById('audio').play();
+        }
                                
-            document.addEventListener('keydown', function(e) {
-                if (e.keyCode == m) {
-                  document.getElementById('audio').play();
-                }
-              });
-                            }
+         
           
                                                                   
     keyboardFeedbackEventElement.appendChild(feedbackElement)
@@ -162,12 +163,11 @@ bKeyElement.innerHTML = "<img src=\"./Image/squeezei.png\">";
 
     })
 
-    
-    function refreshPage()
-    {
-        window.location = window.location.href;
-    }
-    setInterval('refreshPage()', 25000);
+
+    function handler(evt){
+        if(evt.keyCode == 3,4,5,6,7,8,w,e,r,t,y,u,i) // enter key
+            location.reload() // refresh page
+    }  
 
 
 
