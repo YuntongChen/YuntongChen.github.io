@@ -49,8 +49,7 @@ opacity:0%;
 }
 #background{z-index:-1;}
 #box:hover ~ img#background {
-    filter: blur(2px);
-    -webkit-filter: blur(4px);
+    filter: blur(4px)!important;
     }
 #box:hover ~ .mouse{opacity:100%;
     font-size:20px;
