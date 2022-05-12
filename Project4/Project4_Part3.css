@@ -34,9 +34,9 @@ opacity:0%;
 }
 
 @media only screen and (min-width:768px) {
-    img{max-width:140%;
-      max-height:140%;
-      height:140%;
+    img{max-width:1450%;
+      max-height:145%;
+      height:145%;
       position:fixed;
       max-width:100vw;}
   }
