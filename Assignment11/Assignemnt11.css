@@ -29,8 +29,15 @@ color:#d46d51;}
 
 ul {list-style-type: square;
     padding: 10px;
+  
     border-radius:12px;
     font-size:20px;
     font-weight:bold}
 
 
+@media only screen and (max-width:800px){
+    label{top:25%;
+        left:20%}
+        p{top:35%;
+        left:20%;}   
+}
