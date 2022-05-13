@@ -1,0 +1,22 @@
+body{background-color:#ffffe6;
+font-size:18px;
+font-family: 'Radio Canada', sans-serif;}
+.answer{color:#ffa64d;
+font-style:italic}
+.question{font-weight:bold;
+font-style: normal;
+font-size:20px;}
+#position{position:fixed;
+top:50px;
+left:1200px;
+background:aquamarine;}
+
+@media only screen and (max-width:768px){
+    body{background-color: aquamarine;}
+    #position{background-color:#ffa64d;
+    left:80%;
+font-size:13px;
+color:black;}
+    }
+#columns{ display:flex;
+    flex-wrap: nowrap;}
