@@ -1,7 +1,27 @@
 <html>
 <body>
+<style>
+  @font-face {
+    font-family: 'cantiquenormal';
+    src: url('./webfontkit-20220513-020306/cantique-normal-webfont.woff2') format('woff2'),
+         url('./webfontkit-20220513-020306/cantique-normal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+  body{background-color:black;}
+  #canvas{position:absolute;
+  left:350px;}
+
+  @media only screen and (max-width:1200px){
+    #canvas{left:20%;
+      top:40%;
+max-width:55%;}
+  }
+</style>
 <canvas id="canvas" width="750px" height="750px";>
+
+
 </canvas>
 
 <script>
@@ -26,21 +46,20 @@ function drawFace(ctx, radius) {
   ctx.fill();
   grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
   grad.addColorStop(0, '#333');
-  grad.addColorStop(0.5, 'black');
-  grad.addColorStop(1, '#333');
+  grad.addColorStop(0.5, '#ffffe6');
   ctx.strokeStyle = grad;
   ctx.lineWidth = radius*0.1;
   ctx.stroke();
   ctx.beginPath();
   ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
-  ctx.fillStyle = '#333';
+  ctx.fillStyle = '#ffffe6';
   ctx.fill();
 }
 
 function drawNumbers(ctx, radius) {
   var ang;
   var num;
-  ctx.font = radius*0.15 + "px arial";
+  ctx.font = radius*0.15 + "10px cantiquenormal";
   ctx.textBaseline="middle";
   ctx.textAlign="center";
   for(num = 1; num < 13; num++){
@@ -84,6 +103,8 @@ function drawHand(ctx, pos, length, width) {
     ctx.stroke();
     ctx.rotate(-pos);
 }
+
+
 </script>
 
 </body>
