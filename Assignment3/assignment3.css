@@ -4,14 +4,15 @@ img{position:absolute;
   left:0px;
   max-width:150%;
   height: auto;}
-.container{
+.container{left:1000px;
 padding: 20px 1em 0 2em;
 border:20px;
 font-size:100px;
 border:20px;
 margin:30px;
 color:white;
-position:fixed;}
+position:fixed;
+transform: rotate(90deg);}
 .descriptioncontainer{position:absolute;
 padding: 20px 1em 0 2em;
 border:20px;
@@ -66,3 +67,9 @@ font-size:20px;}
 left:0px;
 font-size:20px;}
 }
+.description{position:absolute;
+top:300px;
+left:120px;
+color:white;
+width:200px;
+font-size:20px;}
