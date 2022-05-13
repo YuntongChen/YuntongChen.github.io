@@ -6,17 +6,17 @@
     font-style: normal;
   
   }
-h1{font-size:80px;
+h1{font-size:100px;
     font-family: 'typefesseclaire-obscure';
 color:black;}
 body{background-color:#ffffe6;
 font-size:18px;
 font-family: 'Radio Canada', sans-serif;}
 .answer{color:#ffa64d;
-font-style:italic}
-.question{font-weight:bold;
-font-style: normal;
-font-size:20px;}
+font-style:oblique}
+.question{font-weight:bolder;
+font-style:normal;
+font-size:23px;}
 #position{position:fixed;
 top:50px;
 left:1200px;
@@ -29,7 +29,7 @@ background:aquamarine;}
     left:80%;
 font-size:13px;
 color:black;}
-.question{font-size:15px;}
+.question{font-size:16px;}
 h1{font-size:50px;}
     }
 #columns{ display:flex;
