@@ -23,11 +23,14 @@ left:1200px;
 background:aquamarine;}
 
 @media only screen and (max-width:768px){
-    body{background-color: aquamarine;}
+    body{background-color: aquamarine;
+    font-size:14px;}
     #position{background-color:#ffa64d;
     left:80%;
 font-size:13px;
 color:black;}
+.question{font-size:15px;}
+h1{font-size:50px;}
     }
 #columns{ display:flex;
     flex-wrap: nowrap;
