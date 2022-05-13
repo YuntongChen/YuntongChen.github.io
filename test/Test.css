@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'typefesseclaire-obscure';
+    src: url('./font/typefesse_claire-obscure-webfont.woff2') format('woff2'),
+         url('./font/typefesse_claire-obscure-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+h1{font-size:60px;
+    font-family: 'typefesseclaire-obscure';
+color:#ffa64d}
 body{background-color:#ffffe6;
 font-size:18px;
 font-family: 'Radio Canada', sans-serif;}
@@ -19,4 +30,8 @@ font-size:13px;
 color:black;}
     }
 #columns{ display:flex;
-    flex-wrap: nowrap;}
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    border-style: none;
+border-width: 1px;;
+border-color:aquamarine}
