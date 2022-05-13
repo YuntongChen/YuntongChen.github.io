@@ -8,9 +8,23 @@
 
     <title>Core 2: Interaction Lab / Test</title>
     <meta name="description" content="A repository for information on the Core 2 Interaction Lab course.">
-    <meta name="author" content="Ian Glover">
-</head>
+    <meta name="author" content="Yuntong Chen">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=EB+Garamond&family=IBM+Plex+Sans+Thai+Looped:wght@200;400&family=Noto+Sans:wght@300;400&family=Radio+Canada:wght@300;400&family=Roboto+Slab&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./Test.css" />
+    <script src="./Test.js" type="text/javascript" defer></script>
 
+
+</head>
+<style>
+    a:link {
+  color: #ffa64d;
+}
+a:active {color: #ffa64d;}
+a:visited {
+    color: #ffa64d;
+}
+</style>
 <body>
     <main>
         <h1>PUCD 2126<br />Assignment 1: Course Review Test</h1>
@@ -29,7 +43,7 @@
             <p class="question">2. In your own words, explain what Git and Github are used for and the main
                 differences between them.</p>
             <div class="answer">
-               Git is a control tool that keep tracking and record every adjustments you made. Github will not immediately record changes you made in local code, but a centralized location that stores the code once you pushed origin from Git.
+               Git is a control tool that keep tracking every adjustments you made. Github will not immediately record changes from your own local file, but a stable and centralized storage that needs your click "pushed origin" on Git in order to upload to Github.
             </div>
         </div>
 
@@ -40,7 +54,7 @@
                 webpages.
             </p>
             <div class="answer">
-                <!-- answer goes here -->
+                HTML helps structure and add content to the web. Importing texts, images, videos and attaching links from external site all can be accomplished in HTML.
             </div>
         </div>
 
@@ -51,7 +65,7 @@
                 webpages..
             </p>
             <div class="answer">
-                <!-- answer goes here -->
+                CSS helps costomize every elements you add on HTML. For instance, you can change size, position, opacity, adding filter nearly every characteristic of the elements you added in HTML.
             </div>
         </div>
 
@@ -62,7 +76,7 @@
                 stylesheet
                 to:
                 <ul>
-                    <li>Apply new colors for the Background of this HTML document.
+                    <li class="background">Apply new colors for the Background of this HTML document.
                     </li>
                     <li>Apply new colors to the text content of this HTML document.
                     </li>
@@ -79,7 +93,7 @@
             <p class="question">5. Please embed a piece of external content from a source of your choice, such as
                 Spotify or YouTube, below.</p>
             <div class="answer">
-                <!-- embedded content goes here -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7rspQR7rhf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -151,7 +165,8 @@
                 </p>
             </div>
             <div class="answer">
-                <!-- Links Go here -->
+                 <a href="/Project2/Final.html"><div class="link1">Link1</div></a>
+                 <a href="https://www.newartdealers.org/"><div class="Link2">Link2</div></a>
             </div>
         </div>
 
@@ -167,7 +182,7 @@
             </div>
             <div class="answer">
                 <p>
-                    <!-- answer goes here -->
+                    False.
                 </p>
             </div>
         </div>
@@ -208,7 +223,7 @@
             </div>
             <div class="answer">
                 <div id="parent-element">
-                    <!-- child element goes here -->
+    
                 </div>
             </div>
         </div>
@@ -248,6 +263,7 @@
                 <button id="event-listener-button">
                     Click Here
                 </button>
+                <p class="feedback" id="click-feedback"></p>
             </div>
         </div>
 
