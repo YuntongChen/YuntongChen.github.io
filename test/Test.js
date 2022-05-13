@@ -6,7 +6,7 @@ divElement.innerHTML="New HTML div Element"
 parentElement.appendChild(divElement)
 
 const forLoopArray=["Item One", "Item Two","Item Three","Item Four"]
-for(let index=0; index<forLoopArray.length; index++){
+for(let index=0; index < forLoopArray.length; index++){
     const item=forLoopArray[index];
     console.log(item);
 }
