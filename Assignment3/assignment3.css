@@ -4,7 +4,7 @@ img{position:absolute;
   left:0px;
   max-width:150%;
   height: auto;}
-.container{left:1000px;
+h1{left:1000px;
 padding: 20px 1em 0 2em;
 border:20px;
 font-size:100px;
@@ -12,7 +12,20 @@ border:20px;
 margin:30px;
 color:white;
 position:fixed;
-transform: rotate(90deg);}
+transform: rotate(90deg);
+font-weight:lighter;}
+h4{left:1050px;
+  padding: 20px 1em 0 2em;
+  border:20px;
+  font-size:20px;
+  top:75px;
+  border:20px;
+  margin:30px;
+  color:white;
+  position:fixed;
+  transform: rotate(90deg);
+  font-weight:lighter;
+font-style:italic;}
 .descriptioncontainer{position:absolute;
 padding: 20px 1em 0 2em;
 border:20px;
@@ -37,29 +50,40 @@ left:900px;}
   color:white;
   width:300px;
   font-size:25px;}
-  @media only screen and (max-width:1000px){
-    .container{left:500px;}
+  @media only screen and (max-width:1300px){
+h1{left:500px;}
     .description{font-size:20px;
       width:300px;
     left:90px;}
-    .detailcontainer{top:800px;
+    h4{left:550px;}
+    .detailcontainer{
+      top:800px;
     left:600px;
   font-size:20px;
 width:300px;}
-     .descriptioncontainer{top:800px;
+     .descriptioncontainer{
+       top:800px;
     font-size:20px;}
   img{max-width:170%;}
     }
 @media only screen and (max-width:800px){
-.description{top:250px;
+.description{top:300px;
 left:50px;
-font-size:15px;}
-.container{left:300px;}
-.detailcontainer{top:600px;
+font-size:15px;
+position:fixed;}
+h1{left:-150px;
+  transform: rotate(0deg);
+font-size:80px;}
+h4{top:120px;
+  left:-25px;
+  transform: rotate(0deg);}
+.detailcontainer{position:fixed;
+  top:600px;
 font-size:20px;
 left:500px;
 width:200px;}
-.descriptioncontainer{top:600px;
+.descriptioncontainer{position:fixed;
+  top:600px;
 font-size:20px;
 left:-10px;}
 img{max-width:180%;}
@@ -67,17 +91,25 @@ img{max-width:180%;}
 
 @media only screen and (max-width:600px){
   .description{top:200px;
-    font-size:10px;
-  left:50px;
+font-size:10px;
+left:50px;
 color:white;
 width:200px;
 top:250px;}
-img{max-width:210%;} 
-.container{left:100px;}
-.detailcontainer{top:550px;
+img{max-width:220%;} 
+h1{left:-100px;
+font-size:60px;
+transform: rotate(0deg);}
+h4{top:100px;
+  left:-20px;
+  transform: rotate(0deg);}
+.detailcontainer{position:fixed;
+  top:550px;
 left:300px;
 font-size:12px;}
-.descriptioncontainer{font-size:12px;
+.descriptioncontainer{
+  position:fixed;
+  font-size:12px;
 top:550px;
 }
   }
