@@ -6,11 +6,11 @@ function updateBackground() {
       hello = document.querySelector(".hello");    
     if (hr < 10) {
       bstyle.backgroundColor = "white";
-      bstyle.color = "black";
+      bstyle.color = "#565332";
       hello.innerText = "Good morning";
     } else if (hr < 20) {
       bstyle.backgroundColor = "#F0F8FF";
-      bstyle.color = "black";
+      bstyle.color = "#797446";
       hello.innerText ="Have a good day!";
     } else {
       bstyle.backgroundColor = "black";
