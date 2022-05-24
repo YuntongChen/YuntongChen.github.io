@@ -2,17 +2,10 @@
     font-size: 4em;
   }
 
-  @keyframes storm {
-    0%   {background-color: white;}
-    25%  {background-color: #DCDCDC;}
-    35%  {background-color: #A9A9A9;}
-    40%  {background-color: #696969;}
-    100% {background-color: black;}
-  }
- .hello{left:400px;
+ .hello{left:500px;
      position:absolute;
-     top:300px;
-    font-size: 50px;
+     top:350px;
+    font-size: 80px;
     color: #F0E68C;
     text-align: center;
     animation: glow 10s ease-in-out infinite alternate;
@@ -30,3 +23,19 @@
   .next{position:absolute;
   left:1100px;
   top:1235px;}
+
+  @media only screen and (max-width:1200px) {
+   .hello{left:300px;
+    font-size:60px;
+  }
+  }
+  @media only screen and (max-width:700px) {
+    .hello{left:180px;
+      font-size:35px;
+   }
+   }
+.description{position:absolute;
+left:10px;}
+.counting{position:absolute;
+  top:30px;
+left:10px;}
