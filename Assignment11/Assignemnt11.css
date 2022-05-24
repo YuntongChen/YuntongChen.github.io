@@ -39,5 +39,20 @@ ul {list-style-type: square;
     label{top:25%;
         left:20%}
         p{top:35%;
-        left:20%;}   
+        left:20%;}  
+.hint{font-size:5px;
+left:-100px;
+width:300px;}
+}
+
+
+.hint{position:fixed;
+    top:650px;
+    left:105px;
+    font-size:15px;
+color:white;
+font-weight:bold;
+background-color:#3f5576;
+border: 3px solid #3f5576;
+
 }
