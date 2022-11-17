@@ -1,0 +1,675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=EB+Garamond&family=IBM+Plex+Sans+Thai+Looped:wght@200;400&family=Inconsolata:wght@300&family=Noto+Sans:wght@300;400&family=Radio+Canada:wght@300;400;500&family=Roboto+Slab&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="specimen_files/specimen_stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8"/>
+
+    <style type="text/css">
+        		body {
+			font-family: 'frogotyperegular';
+        		}
+
+            </style>
+</head>
+<style>
+    .e-resize{ cursor: e-resize;}
+    
+    body{background-color:white;
+        cursor: e-resize;}
+    .header{position:absolute;
+    top:-50px;
+    left:50px;
+    font-size:400px;}
+    .city{position:absolute;
+    top:200px;
+    left:930px;
+    font-size:400px;}
+.camerapixel{position:absolute;
+max-width:650px;
+max-height:600px;
+height:600px; 
+left:452px;
+top:155px;}
+.camerare{position:absolute;
+width:550px;
+height:650px;
+left:405px;
+top:135px;
+opacity:0%;}
+.camerare:hover{opacity:100%;}
+
+.suanpan{position:absolute;
+max-width:250px;
+max-height:200px;
+height:600px; 
+left:20px;
+top:250px;}
+.suanpanpixel{position:absolute;
+max-width:290px;
+max-height:240px;
+height:600px; 
+left:5px;
+top:225px;
+opacity:0%;}
+.suanpanpixel:hover{opacity:100%;}
+.toy{position:absolute;
+max-width:400px;
+max-height:350px;
+height:600px; 
+left:120px;
+top:400px;}
+.toypixel{position:absolute;
+max-width:455px;
+max-height:405px;
+height:600px; 
+left:95px;
+top:370px;
+opacity:0%;}
+.toypixel:hover{opacity:100%;}
+.commercialgame{position:absolute;
+max-width:270px;
+max-height:220px;
+height:600px; 
+left:1080px;
+top:530px;}
+.commercialpixel{position:absolute;
+max-width:290px;
+max-height:240px;
+height:600px; 
+left:1070px;
+top:520px;
+opacity:0%;}
+.commercialpixel:hover{opacity:100%;}
+.portable{position:absolute;
+max-width:470px;
+max-height:420px;
+height:600px; 
+left:1410px;
+top:65px;}
+.portablepixel{position:absolute;
+max-width:510px;
+max-height:460px;
+height:600px; 
+left:1385px;
+top:45px;
+opacity:0%;}
+.portablepixel:hover{opacity:100%;}
+.dictionary{position:absolute;
+max-width:400px;
+max-height:350px;
+height:600px; 
+left:1600px;
+top:490px;}
+.dictionarypixel{position:absolute;
+max-width:450px;
+max-height:400px;
+height:600px; 
+left:1580px;
+top:465px;
+opacity:0%;}
+.dictionarypixel:hover{opacity:100%;}
+.typewriterpixel{position:absolute;
+max-width:350px;
+max-height:300px;
+height:600px; 
+left:1880px;
+top:-85px;}
+.typewriter{position:absolute;
+max-width:400px;
+max-height:350px;
+height:600px; 
+left:1850px;
+top:-85px;
+opacity:0%;}
+.typewriter:hover{opacity:100%;}
+.oldphonepixel{position:absolute;
+max-width:400px;
+max-height:350px;
+height:600px; 
+left:1960px;
+top:280px;}
+.oldphone{position:absolute;
+max-width:450px;
+max-height:400px;
+height:600px; 
+left:1940px;
+top:260px;
+opacity:0%;
+transform: rotate(2deg);
+}
+.oldphone:hover{opacity:100%;}
+.fanpixel{position:absolute;
+max-width:350px;
+max-height:300px;
+height:600px; 
+left:2270px;
+top:490px;}
+.fan{position:absolute;
+max-width:400px;
+max-height:350px;
+height:600px; 
+left:2250px;
+top:460px;
+opacity:0%;
+}
+.fan:hover{opacity:100%;}
+.oldcamerapixel{position:absolute;
+max-width:470px;
+max-height:420px;
+height:600px; 
+left:2335px;
+top:115px;}
+.oldcamera{position:absolute;
+max-width:520px;
+max-height:470px;
+height:600px; 
+left:2320px;
+top:90px;
+opacity:0%;}
+.oldcamera:hover{opacity:100%;}
+.filmpixel{position:absolute;
+max-width:150px;
+max-height:200px;
+height:600px; 
+left:2700px;
+top:5px;
+transform: rotate(90deg);}
+.film{position:absolute;
+max-width:175px;
+max-height:225px;
+height:600px; 
+left:2700px;
+top:5px;
+transform: rotate(90deg);
+opacity:0%;}
+.film:hover{opacity:100%;}
+.drivepixel{position:absolute;
+max-width:325px;
+max-height:275px;
+height:600px; 
+left:2775px;
+top:450px;}
+.drive{position:absolute;
+max-width:345px;
+max-height:295px;
+height:600px; 
+left:2765px;
+top:435px;
+opacity:0%;}
+.drive:hover{opacity:100%;}
+.date{position:absolute;
+top:750px;
+left:35px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;
+}
+.date2{position:absolute;
+top:750px;
+left:835px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date3{position:absolute;
+top:750px;
+left:1500px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date4{position:absolute;
+top:750px;
+left:2165px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date5{position:absolute;
+top:750px;
+left:3100px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date6{position:absolute;
+top:750px;
+left:3600px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date7{position:absolute;
+top:750px;
+left:4300px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date8{position:absolute;
+top:750px;
+left:5000px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date9{position:absolute;
+top:750px;
+left:5550px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date10{position:absolute;
+top:750px;
+left:6150px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date11{position:absolute;
+top:750px;
+left:6750px;
+font-size:20px;
+font-family: 'Inconsolata', monospace;}
+.date13{position:absolute;
+top:730px;
+left:6950px;
+font-size:50px;
+width:350px;}
+.TVpixel{position:absolute;
+max-width:345px;
+max-height:255px;
+height:600px; 
+left:2965px;
+top:100px;}
+.TV{position:absolute;
+max-width:375px;
+max-height:285px;
+height:600px; 
+left:2955px;
+top:90px;
+opacity:0%;}
+.TV:hover{opacity:100%;}
+.oldphonepixel2{position:absolute;
+max-width:445px;
+max-height:265px;
+height:600px; 
+left:3125px;
+top:475px;}
+.oldphone2{position:absolute;
+max-width:465px;
+max-height:285px;
+height:600px; 
+left:3110px;
+top:470px;
+opacity:0%;}
+.oldphone2:hover{opacity:100%;}
+.phonepixel3{
+    position:absolute;
+max-width:485px;
+max-height:305px;
+height:600px; 
+left:3360px;
+top:100px;
+}
+.phone3{position:absolute;
+max-width:515px;
+max-height:335px;
+height:600px; 
+left:3340px;
+top:80px;
+opacity:0%;}
+.phone3:hover{opacity:100%;}
+.camera2pixel{position:absolute;
+max-width:480px;
+max-height:300px;
+height:600px; 
+left:3715px;
+top:-100px;}
+.camera2{position:absolute;
+max-width:500px;
+max-height:320px;
+height:600px; 
+left:3700px;
+top:-80px;
+opacity:0%;}
+.camera2:hover{opacity:100%;}
+.computerpixel{position:absolute;
+max-width:590px;
+max-height:410px;
+height:600px; 
+left:3650px;
+top:330px;}
+.computer{position:absolute;
+max-width:610px;
+max-height:430px;
+height:600px; 
+left:3630px;
+top:315px;
+opacity:0%;}
+.computer:hover{opacity:100%;}
+.edictionarypixel{position:absolute;
+max-width:480px;
+max-height:300px;
+height:600px; 
+left:4190px;
+top:110px;}
+.edictionary{position:absolute;
+max-width:510px;
+max-height:330px;
+height:600px; 
+left:4170px;
+top:90px;
+opacity:0%;}
+.edictionary:hover{opacity:100%;}
+.drivepixel2{position:absolute;
+max-width:560px;
+max-height:380px;
+height:600px; 
+left:4590px;
+top:-30px;
+transform: rotate(-22deg);}
+.drive2{position:absolute;
+max-width:610px;
+max-height:430px;
+height:600px; 
+left:4560px;
+top:-50px;
+opacity:0%;
+transform: rotate(-22deg);}
+.drive2:hover{opacity:100%;}
+.camera3pixel{position:absolute;
+max-width:450px;
+max-height:250px;
+height:600px; 
+left:4765px;
+top:370px;}
+.camera3{position:absolute;
+max-width:480px;
+max-height:280px;
+height:600px; 
+left:4760px;
+top:360px;
+opacity:0%}
+.camera3:hover{opacity:100%;}
+.numberpixel{position:absolute;
+max-width:380px;
+max-height:70px;
+height:600px; 
+left:4400px;
+top:620px;}
+.number{position:absolute;
+max-width:420px;
+max-height:100px;
+height:600px; 
+left:4380px;
+top:610px;
+opacity:0%;}
+.number:hover{opacity:100%;}
+.calpixel{position:absolute;
+max-width:570px;
+max-height:240px;
+height:600px; 
+left:5100px;
+top:70px;}
+.cal{position:absolute;
+max-width:590px;
+max-height:260px;
+height:600px; 
+left:5090px;
+top:55px;
+opacity:0%;}
+.cal:hover{opacity:100%;}
+.palilodpixel{position:absolute;
+max-width:600px;
+max-height:270px;
+height:600px; 
+left:5200px;
+top:500px;
+transform: rotate(90deg);}
+.palilod{position:absolute;
+max-width:620px;
+max-height:290px;
+height:600px; 
+left:5195px;
+top:480px;
+transform: rotate(90deg);
+opacity:0%;}
+.palilod:hover{opacity:100%;}
+.udrivepixel{position:absolute;
+max-width:450px;
+max-height:120px;
+height:600px; 
+left:5395px;
+top:340px;}
+.udrive{position:absolute;
+max-width:470px;
+max-height:140px;
+height:600px; 
+left:5385px;
+top:330px;
+opacity:0%;}
+.udrive:hover{opacity:100%;}
+.petpixel{position:absolute;
+max-width:635px;
+max-height:305px;
+height:600px; 
+left:5670px;
+top:470px;}
+.pet{position:absolute;
+max-width:650px;
+max-height:320px;
+height:600px; 
+left:5665px;
+top:460px;
+opacity:0%;}
+.pet:hover{opacity:100%;}
+.monopolypixel{position:absolute;
+max-width:560px;
+max-height:230px;
+height:600px; 
+left:5560px;
+top:-20px;
+transform: rotate(10deg);}
+.monopoly{position:absolute;
+max-width:575px;
+max-height:245px;
+height:600px; 
+left:5555px;
+top:-20px;
+transform: rotate(10deg);
+opacity:0%;}
+.monopoly:hover{opacity:100%;}
+.smartphonepixel{position:absolute;
+max-width:685px;
+max-height:355px;
+height:600px; 
+left:5835px;
+top:140px;}
+.smartphone{position:absolute;
+max-width:720px;
+max-height:390px;
+height:600px; 
+left:5820px;
+top:125px;
+opacity:0%;}
+.smartphone:hover{opacity:100%;}
+.projectorpixel{position:absolute;
+max-width:630px;
+max-height:300px;
+height:600px; 
+left:6170px;
+top:-40px;}
+.projector{position:absolute;
+max-width:650px;
+max-height:320px;
+height:600px; 
+left:6160px;
+top:-40px;
+opacity:0%;}
+.projector:hover{opacity:100%;}
+.advancedcalpixel{position:absolute;
+max-width:630px;
+max-height:300px;
+height:600px; 
+left:6235px;
+top:430px;}
+.advancedcal{position:absolute;
+max-width:650px;
+max-height:320px;
+height:600px; 
+left:6230px;
+top:420px;
+opacity:0%;}
+.advancedcal:hover{opacity:100%;}
+.TV2pixel{position:absolute;
+max-width:680px;
+max-height:240px;
+left:6530px;
+top:480px;}
+.TV2{position:absolute;
+max-width:700px;
+max-height:260px;
+height:600px; 
+left:6525px;
+top:470px;
+opacity:0%;}
+.TV2:hover{opacity:100%;}
+.translatepixel{position:absolute;
+max-width:540px;
+max-height:100px;
+height:600px; 
+left:7100px;
+top:430px;}
+.translate{position:absolute;
+max-width:555px;
+max-height:115px;
+height:600px; 
+left:7095px;
+top:425px;
+opacity:0%;}
+.translate:hover{opacity:100%;}
+.computer2pixel{position:absolute;
+max-width:830px;
+max-height:400px;
+height:600px; 
+left:6850px;
+top:10px;}
+.computer2{position:absolute;
+max-width:860px;
+max-height:430px;
+height:600px; 
+left:6830px;
+top:0px;
+opacity:0%;}
+.computer2:hover{opacity:100%;}
+.drive4pixel{position:absolute;
+max-width:590px;
+max-height:160px;
+height:600px; 
+left:6900px;
+top:560px;}
+.drive4{position:absolute;
+max-width:620px;
+max-height:190px;
+height:600px; 
+left:6870px;
+top:540px;
+opacity:0%;}
+.drive4:hover{opacity:100%;}
+.smartphone4pixel{
+position:absolute;
+max-width:640px;
+max-height:210px;
+height:600px; 
+left:6570px;
+top:105px;
+}
+.smartphone4{position:absolute;
+max-width:670px;
+max-height:240px;
+height:600px; 
+left:6560px;
+top:83px;
+opacity:0%;}
+.smartphone4:hover{opacity:100%;}
+
+</style>
+<body>
+    <div class="date13">To be continuing...</div>
+    <div class="header">Pixelated</div>
+    <div class="city">city</div>
+    <img class="suanpan" src="./project3 objects/cal pixel.png">
+    <a href="./abacus.html"><img class="suanpanpixel" src="./project3 objects/abacus.png"></a>
+    <img class="camerapixel" src="./project3 objects/camera pixel.png">
+    <a href="./camera1.html"><img class="camerare" src="./project3 objects/camera copy-1@1x_1.png"></a>
+    <img class="toy" src="./project3 objects/box toy pixel.png">
+    <a href="./toy.html"><img class="toypixel" src="./project3 objects/toy box.png"></a>
+    <img class="commercialgame" src="./project3 objects/commercial board game pixel.png">
+   <img class="commercialpixel" src="./project3 objects/the_mansion_of_happiness.jpg">
+   <img class="portable" src="./project3 objects/hover3.png">
+   <a href="./calculatordescription.html"><img class="portablepixel" src="./project3 objects/portable calculator.png"></a>
+   <img class="dictionary" src="./project3 objects/dictionary pixel.png">
+   <img class="dictionarypixel" src="./project3 objects/dictionary.png">
+   <img class="typewriterpixel" src="./project3 objects/typewriter pixel.png">
+   <img class="typewriter" src="./project3 objects/typewriter.png">
+   <img class="oldphonepixel" src="./project3 objects/phone pixel.png">
+   <img class="oldphone" src="./project3 objects/old phone.png">
+   <img class="fanpixel" src="./project3 objects/fan pixel.png">
+   <img class="fan" src="./project3 objects/fan.png">
+   <img class="oldcamerapixel" src="./project3 objects/camera2.png">
+   <img class="oldcamera" src="./project3 objects/camera copy 2.png">
+   <img class="filmpixel" src="./project3 objects/film pixel.png">
+   <img class="film" src="./project3 objects/220px-35mm-undevel.jpg">
+   <img class="drivepixel" src="./project3 objects/earliset drive pixel.png">
+   <img class="drive" src="./project3 objects/earliest drive.png">
+   <img class="TVpixel" src="./project3 objects/TV pixel.png">
+   <img class="TV" src="./project3 objects/tv.png">
+   <img class="oldphonepixel2" src="./project3 objects/phone pixel2.png">
+   <img class="oldphone2" src="./project3 objects/phone.png">
+   <img class="phonepixel3" src="./project3 objects/phone pixel. .png">
+   <img class="phone3" src="./project3 objects/phone_.png">
+   <img class="camera2pixel" src="./project3 objects/camera pixel .png">
+   <img class="camera2" src="./project3 objects/camera_.png">
+   <img class="computerpixel" src="./project3 objects/computer pixel.png">
+   <a href="./computer.html"><img class="computer" src="./project3 objects/computer.png"></a>
+   <img class="edictionarypixel" src="./project3 objects/dictionary pixel2.png">
+   <img class="edictionary" src="./project3 objects/dictionaery2.png">
+   <img class="drivepixel2" src="./project3 objects/2000 drive pixel.png">
+   <img class="drive2" src="./project3 objects/drive 2000.png">
+   <img class="camera3pixel" src="./project3 objects/camera  pixel.png">
+   <img class="camera3" src="./project3 objects/camera. .png">
+   <img class="numberpixel" src="./project3 objects/time copy.png">
+   <img class="number" src="./project3 objects/time.png">
+   <img class="calpixel" src="./project3 objects/cal pixel copy.png">
+   <img class="cal" src="./project3 objects/cal.png">
+   <img class="palilodpixel" src="./project3 objects/palilod.png">
+   <img class="palilod" src="./project3 objects/download.png">
+   <img class="udrivepixel" src="./project3 objects/U disk pixel.png">
+   <img class="udrive" src="./project3 objects/History-USB-Flash-Drive.png">
+   <img class="petpixel" src="./project3 objects/tang pixel.png">
+   <img class="pet" src="./project3 objects/pet.png">
+   <img class="monopolypixel" src="./project3 objects/monopoly pixel.png">
+   <img class="monopoly" src="./project3 objects/Screen Shot 2022-10-12 at 17.29.33.png">
+   <img class="smartphonepixel" src="./project3 objects/phone pixel copy.png">
+   <img class="smartphone" src="./project3 objects/phone copy.png">
+   <img class="projectorpixel" src="./project3 objects/projector pixel.png">
+   <img class="projector" src="./project3 objects/projector.png">
+   <img class="advancedcalpixel" src="./project3 objects/advanced calculator pixel.png">
+   <img class="advancedcal" src="./project3 objects/advanced calculator.png">
+   <img class="TV2pixel" src="./project3 objects/TV pixel copy.png">
+   <img class="TV2" src="./project3 objects/tv copy.png">
+   <img class="translatepixel" src="./project3 objects/translate pixel.png">
+   <img class="translate" src="./project3 objects/Google_Translate_logo.svg.png">
+   <img class="computer2pixel" src="./project3 objects/computer pixel copy.png">
+   <img class="computer2" src="./project3 objects/computer copy.png">
+   <img class="drive4pixel" src="./project3 objects/google drive pixel.png">
+   <img class="drive4" src="./project3 objects/Google drive.png">
+   <img class="smartphone4pixel" src="./project3 objects/smartphone pixel.png">
+   <img class="smartphone4" src="./project3 objects/smartphone.png">
+
+
+
+
+
+<div class="date">1820</div>
+<div class="date2">1860</div>
+<div class="date3">1900</div>
+<div class="date4">1940</div>
+<div class="date5">1980</div>
+
+<div class="date7">2000</div>
+<div class="date8">2005</div>
+<div class="date9">2010</div>
+<div class="date10">2015</div>
+<div class="date11">2020</div>
+
+</body>
+</html>
