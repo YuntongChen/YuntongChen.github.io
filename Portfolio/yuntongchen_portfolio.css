@@ -1,0 +1,32 @@
+
+/*
+ * Audio Player
+ */
+.fixedname{
+    position:fixed;
+    top:5px;
+    left:30px;
+    font-family: 'Heebo', sans-serif;
+    font-size:70px;
+}
+.column{position:fixed;
+    top:45px;
+    left:800px;
+    font-family: 'Heebo', sans-serif;
+    font-size:15px;}
+.description{position:fixed;
+        top:530px;
+        left:30px;
+        font-family: 'Heebo', sans-serif;
+        font-size:15px;
+    width:150px;}
+.info{position:fixed;
+    top:730px;
+    left:30px;
+    font-family: 'Heebo', sans-serif;
+    font-size:15px;}
+.caption{position:fixed;
+    top:200px;
+    left:500px;
+    font-family: 'Heebo', sans-serif;
+    font-size:15px;}
