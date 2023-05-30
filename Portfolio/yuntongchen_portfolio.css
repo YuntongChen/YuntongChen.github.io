@@ -8,24 +8,58 @@
     left:30px;
     font-family: 'Heebo', sans-serif;
     font-size:70px;}
-.column{position:fixed;
+.title{font-weight:bold;
+font-style:oblique;
+font-size:18px;}
+.column{position:absolute;
     top:45px;
-    left:800px;
+    left:700px;
     font-family: 'Heebo', sans-serif;
-    font-size:15px;}
+    font-size:18px;}
 .description{position:fixed;
-        top:530px;
+        top:570px;
         left:30px;
         font-family: 'Heebo', sans-serif;
-        font-size:15px;
-    width:150px;}
+        font-size:18px;
+    width:215px;}
 .info{position:fixed;
-    top:730px;
+    top:725px;
     left:30px;
     font-family: 'Heebo', sans-serif;
-    font-size:15px;}
-.caption{position:fixed;
+    font-size:18px;}
+.caption{position:absolute;
     top:200px;
-    left:500px;
+    left:480px;
     font-family: 'Heebo', sans-serif;
-    font-size:15px;}
+    font-size:15px;
+width:150px;
+font-weight:300;}
+.DNAtitle{position:absolute;
+    top:560px;
+    font-weight:bold;
+    font-style:oblique;
+    font-size:18px;}
+.DNA{font-weight:300;
+font-size:15px;
+font-style:normal;}
+
+
+@media screen and (max-width: 768px) {
+        div.column {position:absolute;
+  opacity:0%;
+        }
+              }
+              @media screen and (min-width:768px) { 
+                div#information p{font-size:15px;
+                left:70%;}} 
+
+.onclick{
+    max-width:370%;}
+    .DNA{ max-width:370%;}
+.imagecontainer{position:absolute;
+top:200px;
+left:650px;
+max-width:15%;}
+.perfecthome{
+    max-width:150%;}
+
