@@ -1,5 +1,40 @@
-body{background-color:black;}
+body{background-color:black;
+color:white;
+font-family: 'Heebo', sans-serif;}
 .gif{position:absolute;
-    top:0px;
-    left:600px;
-    max-width:60%;}
+    top:150px;
+    left:420px;
+    max-width:70%;}
+.onclick{max-width:70%;
+    position:absolute;
+    top:750px;
+    left:420px;}
+.descriptiononclick{position:fixed;
+top:10px;
+left:30px;
+color:white;
+font-size:18px;}
+.guideline{max-width:60%;
+    position:absolute;
+    top:1450px;
+    left:420px;}
+.card{max-width:70%;
+    position:absolute;
+    top:2150px;
+    left:420px;}
+.description{position:fixed;
+    top:570px;
+    left:30px;
+    font-size:18px;
+width:215px;}
+.info{position:fixed;
+top:725px;
+left:30px;
+font-size:18px;}
+.branddescription{position:fixed;
+top:0px;
+left:408px;
+font-size:18px;
+width:1010px;
+background:black;
+border: 10px solid black;}
