@@ -1,0 +1,53 @@
+body{background: linear-gradient(white 10%, black 35%);
+color:black;
+font-family: 'Heebo', sans-serif;}
+.descriptionDNA{position:fixed;
+    top:10px;
+    left:30px;
+    color:black;
+    font-size:18px;
+    color:white;
+    mix-blend-mode:difference;}
+.description{position:fixed;
+        top:570px;
+        left:30px;
+        font-size:18px;
+    width:215px;
+    color:white;
+    mix-blend-mode:difference;}
+.info{position:fixed;
+        top:725px;
+        left:30px;
+        font-size:18px;
+        color:white;
+    mix-blend-mode:difference;}
+
+.branddescription{position:fixed;
+            top:10px;
+            left:408px;
+            font-size:18px;
+            width:1010px;
+    mix-blend-mode:difference;
+color:white;}
+
+.DNA{max-width:470%;}  
+.logo{max-width:470%;}
+       
+.imagecontainer{position:absolute;
+                top:150px;
+                left:400px;
+                max-width:15%;}
+
+
+                .section1 {
+                    height: 5000px;
+                
+                  }
+
+.smallversion{position:absolute;
+top:300px;
+width:200px;}
+.small1{width:50%;}
+.small2{width:50%;}
+.small3{width:50%;}
+.small4{width:50%;}
